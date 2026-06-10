@@ -27,6 +27,9 @@
 {{-- Canonical --}}
 <link rel="canonical" href="{{ $canonical }}">
 
+{{-- Favicon --}}
+<link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+
 {{-- hreflang: به گوگل می‌گوید هر زبان کدام آدرس است --}}
 @foreach($ogLocales as $code => $ogLocale)
     <link rel="alternate" hreflang="{{ $code }}" href="{{ $altUrl($code) }}">
