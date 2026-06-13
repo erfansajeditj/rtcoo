@@ -28,7 +28,9 @@
 <link rel="canonical" href="<?php echo e($canonical); ?>">
 
 
-<link rel="icon" type="image/png" href="<?php echo e(asset('favicon.png')); ?>">
+<link rel="icon" type="image/x-icon" href="<?php echo e(asset('favicon.ico?v=' . config('app.version', '1'))); ?>">
+<link rel="icon" type="image/png" href="<?php echo e(asset('favicon.png?v=' . config('app.version', '1'))); ?>">
+<link rel="apple-touch-icon" href="<?php echo e(asset('apple-touch-icon.png?v=' . config('app.version', '1'))); ?>">
 
 
 <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php $__currentLoopData = $ogLocales; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $code => $ogLocale): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
