@@ -28,6 +28,9 @@
 <link rel="canonical" href="<?php echo e($canonical); ?>">
 
 
+<link rel="icon" type="image/png" href="<?php echo e(asset('favicon.png')); ?>">
+
+
 <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php $__currentLoopData = $ogLocales; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $code => $ogLocale): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
     <link rel="alternate" hreflang="<?php echo e($code); ?>" href="<?php echo e($altUrl($code)); ?>">
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
@@ -54,7 +57,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style> body { font-family: 'Inter', sans-serif; } </style>
 
-<link rel="icon" type="image/x-icon" href="<?php echo e(asset('favicon.ico')); ?>">
 <?php
     $orgSchema = [
         '@context' => 'https://schema.org',
@@ -81,4 +83,5 @@
 <script type="application/ld+json">
 <?php echo json_encode($orgSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>
 
-</script><?php /**PATH C:\xampp\htdocs\tajik-med\resources\views/partials/head.blade.php ENDPATH**/ ?>
+</script>
+<?php /**PATH C:\xampp\htdocs\tajik-med\resources\views/partials/head.blade.php ENDPATH**/ ?>
