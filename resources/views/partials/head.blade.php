@@ -28,8 +28,8 @@
 <link rel="canonical" href="{{ $canonical }}">
 
 {{-- Favicon --}}
-<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico?v=' . config('app.version', '1')) }}">
-<link rel="apple-touch-icon" href="{{ asset('favicon.ico?v=' . config('app.version', '1')) }}">
+<link rel="icon" type="image/png" href="{{ asset('logo.png.png?v=' . config('app.version', '1')) }}">
+<link rel="apple-touch-icon" href="{{ asset('logo.png.png?v=' . config('app.version', '1')) }}">
 
 {{-- hreflang: به گوگل می‌گوید هر زبان کدام آدرس است --}}
 @foreach($ogLocales as $code => $ogLocale)
