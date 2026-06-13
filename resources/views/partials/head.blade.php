@@ -29,8 +29,7 @@
 
 {{-- Favicon --}}
 <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico?v=' . config('app.version', '1')) }}">
-<link rel="icon" type="image/png" href="{{ asset('favicon.png?v=' . config('app.version', '1')) }}">
-<link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png?v=' . config('app.version', '1')) }}">
+<link rel="apple-touch-icon" href="{{ asset('favicon.ico?v=' . config('app.version', '1')) }}">
 
 {{-- hreflang: به گوگل می‌گوید هر زبان کدام آدرس است --}}
 @foreach($ogLocales as $code => $ogLocale)
