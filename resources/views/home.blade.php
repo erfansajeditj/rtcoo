@@ -11,13 +11,14 @@
 
     <div class="relative w-full h-screen overflow-hidden bg-gray-900">
     
-    <video 
-        autoplay 
-        loop 
-        muted 
-        playsinline 
+    <video
+        autoplay
+        loop
+        muted
+        playsinline
         class="absolute inset-0 w-full h-full object-cover z-0 scale-105 transform motion-safe:animate-slow-zoom"
     >
+        <source src="{{ asset('videos/hero.mp4') }}" type="video/mp4">
         <source src="{{ asset('videos/hero.webm') }}" type="video/webm">
         Your browser does not support the video tag.
     </video>
