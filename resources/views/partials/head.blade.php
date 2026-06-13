@@ -28,8 +28,8 @@
 <link rel="canonical" href="{{ $canonical }}">
 
 {{-- Favicon --}}
-<link rel="icon" type="image/png" href="{{ asset('logo.png.png?v=' . config('app.version', '1')) }}">
-<link rel="apple-touch-icon" href="{{ asset('logo.png.png?v=' . config('app.version', '1')) }}">
+<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+<link rel="apple-touch-icon" href="{{ asset('logo.png') }}">
 
 {{-- hreflang: به گوگل می‌گوید هر زبان کدام آدرس است --}}
 @foreach($ogLocales as $code => $ogLocale)
@@ -60,27 +60,71 @@
 
 @php
     $orgSchema = [
-        '@context' => 'https://schema.org',
-        '@type'    => 'Organization',
-        'name'     => 'Rozi Tib',
+        '@context'      => 'https://schema.org',
+        '@type'         => ['MedicalOrganization', 'LocalBusiness'],
+        'name'          => 'Rozi Tib',
         'alternateName' => 'RoziTib Medical Technologies',
-        'url'      => url('/'),
-        'logo'     => asset('logo.png'),
+        'url'           => url('/'),
+        'logo'          => [
+            '@type' => 'ImageObject',
+            'url'   => asset('logo.png'),
+        ],
+        'image'       => asset('logo.png'),
         'description' => __('messages.footer_about_desc'),
-        'email'    => 'info@rozitib.com',
-        'telephone'=> '+992931102730',
-        'address'  => [
-            '@type' => 'PostalAddress',
+        'email'       => 'info@rozitib.com',
+        'telephone'   => '+992931102730',
+        'address'     => [
+            '@type'           => 'PostalAddress',
+            'streetAddress'   => 'Rudaki Avenue',
             'addressLocality' => 'Dushanbe',
             'addressCountry'  => 'TJ',
+        ],
+        'geo' => [
+            '@type'     => 'GeoCoordinates',
+            'latitude'  => '38.5598',
+            'longitude' => '68.7738',
+        ],
+        'openingHoursSpecification' => [
+            [
+                '@type'     => 'OpeningHoursSpecification',
+                'dayOfWeek' => ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+                'opens'     => '08:00',
+                'closes'    => '17:00',
+            ],
         ],
         'sameAs' => [
             'https://linkedin.com/company/rozi-tib',
             'https://t.me/+992931102730',
             'https://wa.me/992931102730',
         ],
+        'knowsAbout' => [
+            'Medical Equipment Manufacturing',
+            'Autoclave Sterilization',
+            'Hospital Equipment Supply',
+            'Healthcare Technology',
+        ],
+    ];
+
+    $websiteSchema = [
+        '@context'        => 'https://schema.org',
+        '@type'           => 'WebSite',
+        'name'            => 'Rozi Tib',
+        'url'             => url('/'),
+        'description'     => __('messages.footer_about_desc'),
+        'inLanguage'      => ['en', 'tg', 'ru'],
+        'potentialAction' => [
+            '@type'       => 'SearchAction',
+            'target'      => [
+                '@type'       => 'EntryPoint',
+                'urlTemplate' => url('/') . '/' . app()->getLocale() . '/products?q={search_term_string}',
+            ],
+            'query-input' => 'required name=search_term_string',
+        ],
     ];
 @endphp
 <script type="application/ld+json">
 {!! json_encode($orgSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+</script>
+<script type="application/ld+json">
+{!! json_encode($websiteSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
 </script>

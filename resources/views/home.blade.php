@@ -219,6 +219,129 @@
 
 
 
+<!-- ========================================== -->
+<!-- FAQ Section (SEO + GEO: AI Engine Optimization) -->
+<!-- ========================================== -->
+<section class="bg-gray-50 py-20 border-t border-gray-100" id="faq">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-teal-900 tracking-tight mb-4">Frequently Asked Questions</h2>
+            <p class="text-gray-500 text-lg">Everything you need to know about Rozi Tib and our medical equipment.</p>
+        </div>
+
+        <div class="space-y-4" x-data="{ open: null }">
+
+            <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                <button @click="open = open === 1 ? null : 1" class="w-full flex items-center justify-between px-6 py-5 text-left font-bold text-gray-900 hover:text-brand-teal transition-colors">
+                    <span>What types of medical equipment does Rozi Tib manufacture?</span>
+                    <svg class="w-5 h-5 text-brand-teal shrink-0 transition-transform duration-300" :class="open === 1 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div x-show="open === 1" x-transition class="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Rozi Tib specializes in high-speed autoclaves, sterilization systems, and advanced medical devices for hospitals, clinics, and healthcare facilities. Our product range includes surgical sterilization units, diagnostic equipment, and critical care devices — all manufactured to IEC 60601-1 and ISO 13485 standards.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                <button @click="open = open === 2 ? null : 2" class="w-full flex items-center justify-between px-6 py-5 text-left font-bold text-gray-900 hover:text-brand-teal transition-colors">
+                    <span>Do you export medical equipment internationally?</span>
+                    <svg class="w-5 h-5 text-brand-teal shrink-0 transition-transform duration-300" :class="open === 2 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div x-show="open === 2" x-transition class="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Yes. Rozi Tib is an internationally ready manufacturer based in Dushanbe, Tajikistan. We export our medical equipment across Central Asia, the Middle East, and beyond. Our products meet international certification requirements, making them suitable for use in healthcare facilities worldwide.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                <button @click="open = open === 3 ? null : 3" class="w-full flex items-center justify-between px-6 py-5 text-left font-bold text-gray-900 hover:text-brand-teal transition-colors">
+                    <span>What quality certifications do your products have?</span>
+                    <svg class="w-5 h-5 text-brand-teal shrink-0 transition-transform duration-300" :class="open === 3 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div x-show="open === 3" x-transition class="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Our medical equipment complies with IEC 60601-1 (Medical Electrical Safety), ISO 13485 (Quality Management System for Medical Devices), and national IMED certification requirements. Every product undergoes rigorous in-house quality control testing before delivery.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                <button @click="open = open === 4 ? null : 4" class="w-full flex items-center justify-between px-6 py-5 text-left font-bold text-gray-900 hover:text-brand-teal transition-colors">
+                    <span>How can I request a price quote or product catalog?</span>
+                    <svg class="w-5 h-5 text-brand-teal shrink-0 transition-transform duration-300" :class="open === 4 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div x-show="open === 4" x-transition class="px-6 pb-5 text-gray-600 leading-relaxed">
+                    You can request a quote directly from any product page by clicking "Request Quote", or use our <a href="{{ route('contact.show') }}" class="text-brand-teal font-semibold hover:underline">Contact form</a>. For partnership inquiries and distributor catalogs, visit our <a href="{{ route('collaboration.show') }}" class="text-brand-teal font-semibold hover:underline">Collaboration page</a>. Our team typically responds within one business day.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+                <button @click="open = open === 5 ? null : 5" class="w-full flex items-center justify-between px-6 py-5 text-left font-bold text-gray-900 hover:text-brand-teal transition-colors">
+                    <span>Do you provide after-sales support and warranty?</span>
+                    <svg class="w-5 h-5 text-brand-teal shrink-0 transition-transform duration-300" :class="open === 5 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div x-show="open === 5" x-transition class="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Yes. Rozi Tib provides comprehensive after-sales support including 24/7 technical assistance, rapid spare parts supply, and extended warranties on all manufactured devices. We guarantee minimal downtime for all equipment delivered to healthcare facilities.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+@php
+    $faqSchema = [
+        '@context'   => 'https://schema.org',
+        '@type'      => 'FAQPage',
+        'mainEntity' => [
+            [
+                '@type'          => 'Question',
+                'name'           => 'What types of medical equipment does Rozi Tib manufacture?',
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Rozi Tib specializes in high-speed autoclaves, sterilization systems, and advanced medical devices for hospitals, clinics, and healthcare facilities. Our product range includes surgical sterilization units, diagnostic equipment, and critical care devices — all manufactured to IEC 60601-1 and ISO 13485 standards.'],
+            ],
+            [
+                '@type'          => 'Question',
+                'name'           => 'Do you export medical equipment internationally?',
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Yes. Rozi Tib is an internationally ready manufacturer based in Dushanbe, Tajikistan. We export our medical equipment across Central Asia, the Middle East, and beyond. Our products meet international certification requirements, making them suitable for use in healthcare facilities worldwide.'],
+            ],
+            [
+                '@type'          => 'Question',
+                'name'           => 'What quality certifications do your products have?',
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Our medical equipment complies with IEC 60601-1 (Medical Electrical Safety), ISO 13485 (Quality Management System for Medical Devices), and national IMED certification requirements. Every product undergoes rigorous in-house quality control testing before delivery.'],
+            ],
+            [
+                '@type'          => 'Question',
+                'name'           => 'How can I request a price quote or product catalog?',
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'You can request a quote directly from any product page by clicking "Request Quote", or use our Contact form. For partnership inquiries and distributor catalogs, visit our Collaboration page. Our team typically responds within one business day.'],
+            ],
+            [
+                '@type'          => 'Question',
+                'name'           => 'Do you provide after-sales support and warranty?',
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Yes. Rozi Tib provides comprehensive after-sales support including 24/7 technical assistance, rapid spare parts supply, and extended warranties on all manufactured devices. We guarantee minimal downtime for all equipment delivered to healthcare facilities.'],
+            ],
+        ],
+    ];
+
+    $webpageSchema = [
+        '@context'    => 'https://schema.org',
+        '@type'       => 'WebPage',
+        'name'        => 'Rozi Tib - Medical Technologies',
+        'description' => __('messages.hero_desc'),
+        'url'         => url()->current(),
+        'inLanguage'  => app()->getLocale(),
+        'isPartOf'    => ['@type' => 'WebSite', 'url' => url('/')],
+        'about'       => ['@type' => 'Organization', 'name' => 'Rozi Tib'],
+        'breadcrumb'  => [
+            '@type'           => 'BreadcrumbList',
+            'itemListElement' => [
+                ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => url()->current()],
+            ],
+        ],
+    ];
+@endphp
+<script type="application/ld+json">
+{!! json_encode($faqSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+</script>
+<script type="application/ld+json">
+{!! json_encode($webpageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+</script>
+
 @include('footer')
 
 

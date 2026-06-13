@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+Disallow: /admin
+Disallow: /*/marketing-dashboard
+Disallow: /*/contact-submit
+Disallow: /*/collaboration-submit
+Disallow: /chat/

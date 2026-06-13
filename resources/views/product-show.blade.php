@@ -34,7 +34,7 @@
                         <div class="absolute -top-20 -left-20 w-64 h-64 bg-orange-100 rounded-full opacity-50 blur-3xl"></div>
                     </div>
                     
-<div class="sticky top-32 w-full max-w-lg z-10 mx-auto">
+<div class="sticky top-20 lg:top-32 w-full max-w-lg z-10 mx-auto">
                         @if($product->image)
                             
                             {{-- ساخت یک آرایه یکپارچه از تمام عکس‌ها با PHP --}}
@@ -96,7 +96,7 @@
                                 x-init="startAutoSlide()"
                                 class="w-full relative group">
                                 
-<div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 mb-3 h-80 lg:h-[400px] flex flex-col items-center justify-center relative overflow-hidden group/main">
+<div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 mb-3 h-64 sm:h-80 lg:h-[400px] flex flex-col items-center justify-center relative overflow-hidden group/main">
                                     <img :src="images[currentIndex]" alt="{{ $product->name }}" class="max-w-full max-h-full object-contain drop-shadow-lg transition-opacity duration-500 ease-in-out">
                                     
                                     <button @click="prev()" 
@@ -130,7 +130,7 @@
 
                             </div>
                         @else
-                            <div class="w-full h-96 bg-white border border-gray-100 shadow-sm rounded-2xl flex flex-col items-center justify-center text-gray-400">
+                            <div class="w-full h-64 sm:h-96 bg-white border border-gray-100 shadow-sm rounded-2xl flex flex-col items-center justify-center text-gray-400">
                                 <span class="text-4xl mb-2">📷</span>
                                 <p>{{ __('messages.no_image_available') }}</p>
                             </div>
@@ -152,7 +152,7 @@
                     
                     <div class="prose text-gray-600 mb-8 border-b border-gray-100 pb-8">
                         <h3 class="text-lg font-bold text-teal-700 mb-2 flex items-center gap-2">{{ __('messages.product_overview') }}</h3>
-                        {!! $product->description !!}
+                        {!! sanitize_html($product->description) !!}
                     </div>
 
                     @if($product->youtube_video_id)
@@ -174,7 +174,7 @@
                             <span class="w-8 h-8 bg-white text-brand-orange rounded-full flex items-center justify-center mr-3 shadow-sm text-sm border border-orange-100">⚙️</span>
                             {{ __('messages.technical_specs') }}
                         </h3>
-                        <div class="text-gray-700 whitespace-pre-line leading-loose text-base font-sans relative z-10">{!! $product->specs !!}</div>
+                        <div class="text-gray-700 whitespace-pre-line leading-loose text-base font-sans relative z-10">{!! sanitize_html($product->specs) !!}</div>
                     </div>
                     @endif
 

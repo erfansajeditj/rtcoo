@@ -17,7 +17,7 @@
 
 
     <div class="container mx-auto px-6 text-center relative z-10 -mt-20">
-        <h1 class="text-6xl md:text-7xl font-bold mb-5 text-white drop-shadow-md">{{ __('messages.products') }}</h1>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 text-white drop-shadow-md">{{ __('messages.products') }}</h1>
         <p class="text-teal-50 text-lg opacity-100 drop-shadow-sm">{{ __('messages.products_subtitle') }}</p>
     </div>
 </header>
@@ -28,7 +28,7 @@
 
 
     <!-- بخش جدید فیلتر (منوی کشویی) -->
-    <div class="bg-white/95 backdrop-blur border-b border-gray-200 sticky top-[80px] z-40 shadow-sm py-4">
+    <div class="bg-white/95 backdrop-blur border-b border-gray-200 sticky top-[64px] md:top-[80px] z-40 shadow-sm py-4">
         <div class="container mx-auto px-6 flex flex-col sm:flex-row items-center md:justify-start gap-4">
             
             <!-- کلمه Filter با آیکون -->
@@ -94,12 +94,12 @@
             </div>
             
             {{-- گرید کارت‌ها --}}
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 mb-12">
                 
                 {{-- حلقه دوم: چرخیدن روی محصولات همون دسته --}}
                 @foreach($categoryItems as $product)
                 <div class="bg-white rounded-xl shadow-sm transition-all duration-500 border border-gray-100 hover:shadow-2xl hover:shadow-brand-orange/30 hover:-translate-y-1.5 group flex flex-col">
-                    <div class="h-64 overflow-hidden rounded-t-xl bg-white relative flex items-center justify-center p-4 border-b border-gray-50">
+                    <div class="h-40 sm:h-52 md:h-64 overflow-hidden rounded-t-xl bg-white relative flex items-center justify-center p-4 border-b border-gray-50">
                         @if($product->image)
                             <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
                         @else
@@ -139,7 +139,36 @@
 
    
 
-    @include('footer')
+ @php
+    $itemListElements = [];
+    $position = 1;
+    foreach ($products as $categoryName => $categoryItems) {
+        foreach ($categoryItems as $product) {
+            $itemListElements[] = [
+                '@type'    => 'ListItem',
+                'position' => $position++,
+                'name'     => $product->name,
+                'url'      => route('products.show', $product->slug),
+                'image'    => $product->image ? asset('storage/' . $product->image) : null,
+                'description' => strip_tags((string) $product->description),
+            ];
+        }
+    }
+    $itemListSchema = [
+        '@context'        => 'https://schema.org',
+        '@type'           => 'ItemList',
+        'name'            => __('messages.products') . ' - Rozi Tib',
+        'description'     => __('messages.products_subtitle'),
+        'url'             => url()->current(),
+        'numberOfItems'   => $position - 1,
+        'itemListElement' => $itemListElements,
+    ];
+@endphp
+<script type="application/ld+json">
+{!! json_encode($itemListSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+</script>
+
+   @include('footer')
 
 </body>
 </html>

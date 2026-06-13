@@ -8,13 +8,13 @@
 
    @include('partials.navbar')
 
-<header class="relative overflow-hidden py-80 bg-cover bg-[center_top_-6rem]" style="background-image: url('{{ asset('images/headers/about-bg.webp') }}');">
+<header class="relative overflow-hidden py-28 md:py-80 bg-cover bg-[center_top_-6rem]" style="background-image: url('{{ asset('images/headers/about-bg.webp') }}');">
     <div class="absolute inset-0 bg-brand-teal/60 z-0"></div>
     <div class="absolute top-0 right-0 opacity-10 transform translate-x-1/3 -translate-y-1/3 z-0">
          <svg width="400" height="400" fill="currentColor" class="text-white" viewBox="0 0 200 200"><path d="M45,-76C58,-69,68,-59,76,-48C84,-36,90,-23,89,-10C88,3,80,16,71,27C62,38,52,48,41,56C30,64,18,71,5,72C-8,73,-19,68,-30,61C-41,54,-52,45,-61,34C-70,23,-77,10,-76,-3C-75,-16,-66,-28,-56,-38C-46,-48,-35,-56,-23,-63C-11,-70,1,-76,14,-78L45,-76Z" transform="translate(100 100)" /></svg>
     </div>
     <div class="container mx-auto px-6 text-center relative z-10 -mt-20">
-            <h1 class="text-6xl md:text-7xl font-bold mb-5 text-white drop-shadow-md">{{ __('messages.about_rozi_tib') }}</h1>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 text-white drop-shadow-md">{{ __('messages.about_rozi_tib') }}</h1>
             <p class="text-teal-50 text-lg opacity-100 drop-shadow-sm">{{ __('messages.about_subtitle') }}</p>
         </div>
     </header>
@@ -166,7 +166,7 @@
             </div>
 
             <!-- ۳ تا ستون: سخت‌افزار، نرم‌افزار، کنترل کیفیت -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 
                 <!-- 1. Hardware Engineering -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-teal/10 transition-all duration-300">
@@ -372,7 +372,7 @@
             </div>
 
             <!-- گرید 3 کارته ارزش‌ها -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
                 
                 <!-- 1. Precision (دقت) -->
                 <div class="text-center group">

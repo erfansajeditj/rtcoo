@@ -10,6 +10,22 @@ use App\Models\Exhibition;
 // ریشه‌ی سایت → ریدایرکت به زبان پیش‌فرض
 Route::get('/', fn () => redirect('/' . config('app.locale', 'en')));
 
+// Sitemap
+Route::get('/sitemap.xml', [\App\Http\Controllers\SitemapController::class, 'index'])->name('sitemap');
+
+// Dynamic robots.txt (includes sitemap URL with correct domain)
+Route::get('/robots.txt', function () {
+    $content  = "User-agent: *\n";
+    $content .= "Disallow: /admin\n";
+    $content .= "Disallow: /*/marketing-dashboard\n";
+    $content .= "Disallow: /*/contact-submit\n";
+    $content .= "Disallow: /*/collaboration-submit\n";
+    $content .= "Disallow: /chat/\n";
+    $content .= "\n";
+    $content .= "Sitemap: " . route('sitemap') . "\n";
+    return response($content, 200)->header('Content-Type', 'text/plain');
+});
+
 // همه‌ی صفحات عمومی داخل گروه زبان
 Route::prefix('{locale}')
     ->where(['locale' => 'en|tg|ru'])

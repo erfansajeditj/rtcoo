@@ -8,13 +8,13 @@
 
    @include('partials.navbar')
 
-<header class="relative overflow-hidden py-80 bg-cover bg-[center_top_-5rem]" style="background-image: url('{{ asset('images/headers/exhibitions-bg.webp') }}');">
+<header class="relative overflow-hidden py-28 md:py-80 bg-cover bg-[center_top_-5rem]" style="background-image: url('{{ asset('images/headers/exhibitions-bg.webp') }}');">
     <div class="absolute inset-0 bg-brand-teal/60 z-0"></div>
     <div class="absolute top-0 right-0 opacity-10 transform translate-x-1/3 -translate-y-1/3 z-0">
          <svg width="400" height="400" fill="currentColor" class="text-white" viewBox="0 0 200 200"><path d="M45,-76C58,-69,68,-59,76,-48C84,-36,90,-23,89,-10C88,3,80,16,71,27C62,38,52,48,41,56C30,64,18,71,5,72C-8,73,-19,68,-30,61C-41,54,-52,45,-61,34C-70,23,-77,10,-76,-3C-75,-16,-66,-28,-56,-38C-46,-48,-35,-56,-23,-63C-11,-70,1,-76,14,-78L45,-76Z" transform="translate(100 100)" /></svg>
     </div>
     <div class="container mx-auto px-6 text-center relative z-10 -mt-20">
-            <h1 class="text-6xl md:text-7xl font-bold mb-5 text-white drop-shadow-md">{{ __('messages.events_exhibitions') }}</h1>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 text-white drop-shadow-md">{{ __('messages.events_exhibitions') }}</h1>
             <p class="text-teal-100 text-lg">{{ __('messages.exhibitions_subtitle') }}</p>
         </div>
     </header>
@@ -68,7 +68,7 @@
     <div class="absolute bottom-0 left-0 w-64 h-64 bg-brand-orange/10 blur-3xl rounded-full -ml-32 -mb-20 pointer-events-none group-hover:bg-brand-orange/20 transition-all"></div>
     
     @if($imageUrl)
-    <div class="h-[400px] md:h-[500px] bg-gray-100 relative overflow-hidden z-10"> 
+    <div class="h-[220px] sm:h-[300px] md:h-[400px] lg:h-[500px] bg-gray-100 relative overflow-hidden z-10">
          <img :src="mainImage" alt="{{ $exhibition->title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
     </div>
@@ -95,7 +95,7 @@
 
         @if($exhibition->description)
             <div class="text-gray-600 mb-6 text-base leading-relaxed prose prose-teal max-w-none">
-                {!! $exhibition->description !!}
+                {!! sanitize_html($exhibition->description) !!}
             </div>
         @endif
 
@@ -142,6 +142,41 @@
     </div>
 
    
+
+@if($exhibitions->isNotEmpty())
+@php
+    $eventSchemas = [];
+    foreach ($exhibitions as $ex) {
+        $eventStart = $ex->start_date ? \Carbon\Carbon::parse($ex->start_date)->toIso8601String() : null;
+        $eventSchemas[] = [
+            '@context'    => 'https://schema.org',
+            '@type'       => 'Event',
+            'name'        => $ex->title,
+            'description' => $ex->description ? strip_tags((string) $ex->description) : null,
+            'startDate'   => $eventStart,
+            'location'    => $ex->location ? [
+                '@type' => 'Place',
+                'name'  => $ex->location,
+            ] : null,
+            'organizer'   => [
+                '@type' => 'Organization',
+                'name'  => 'Rozi Tib',
+                'url'   => url('/'),
+            ],
+            'image'       => $ex->cover_image ? \Illuminate\Support\Facades\Storage::disk('public')->url($ex->cover_image) : asset('logo.png'),
+            'url'         => url()->current(),
+            'eventStatus' => $eventStart && \Carbon\Carbon::parse($eventStart)->isPast()
+                ? 'https://schema.org/EventScheduled'
+                : 'https://schema.org/EventScheduled',
+        ];
+    }
+@endphp
+@foreach($eventSchemas as $eventSchema)
+<script type="application/ld+json">
+{!! json_encode(array_filter($eventSchema), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+</script>
+@endforeach
+@endif
 
  @include('footer')
 
