@@ -29,32 +29,32 @@
 
 
            <a href="<?php echo e(route('about')); ?>"
-               class="pb-1 transition hover:-translate-y-0.5 transform <?php echo e(request()->is('about') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold'); ?>">
+               class="pb-1 transition hover:-translate-y-0.5 transform <?php echo e(request()->routeIs('about') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold'); ?>">
               <?php echo e(__('messages.about')); ?>
 
             </a>
 
             <a href="<?php echo e(route('products.index')); ?>"
-               class="pb-1 transition hover:-translate-y-0.5 transform <?php echo e(request()->is('products') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold'); ?>">
+               class="pb-1 transition hover:-translate-y-0.5 transform <?php echo e(request()->routeIs('products.index') || request()->routeIs('products.show') || request()->routeIs('products.category') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold'); ?>">
                <?php echo e(__('messages.products')); ?>
 
             </a>
 
             <a href="<?php echo e(route('exhibitions')); ?>"
-               class="pb-1 transition hover:-translate-y-0.5 transform <?php echo e(request()->is('exhibitions') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold'); ?>">
+               class="pb-1 transition hover:-translate-y-0.5 transform <?php echo e(request()->routeIs('exhibitions') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold'); ?>">
                <?php echo e(__('messages.exhibitions')); ?>
 
             </a>
 
           <a href="<?php echo e(route('collaboration.show')); ?>"
-               class="pb-1 transition hover:-translate-y-0.5 transform <?php echo e(request()->is('collaboration') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold'); ?>">
+               class="pb-1 transition hover:-translate-y-0.5 transform <?php echo e(request()->routeIs('collaboration.show') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold'); ?>">
                <?php echo e(__('messages.collaboration')); ?>
 
 
             </a>
 
             <a href="<?php echo e(route('contact.show')); ?>"
-               class="pb-1 transition hover:-translate-y-0.5 transform <?php echo e(request()->is('contact') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold'); ?>">
+               class="pb-1 transition hover:-translate-y-0.5 transform <?php echo e(request()->routeIs('contact.show') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold'); ?>">
                <?php echo e(__('messages.contact')); ?>
 
 
@@ -113,27 +113,27 @@
 
             </a>
             <a href="<?php echo e(route('about')); ?>" @click="open = false"
-               class="px-3 py-3 rounded-lg font-semibold text-sm <?php echo e(request()->is('about') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50'); ?> transition">
+               class="px-3 py-3 rounded-lg font-semibold text-sm <?php echo e(request()->routeIs('about') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50'); ?> transition">
                 <?php echo e(__('messages.about')); ?>
 
             </a>
             <a href="<?php echo e(route('products.index')); ?>" @click="open = false"
-               class="px-3 py-3 rounded-lg font-semibold text-sm <?php echo e(request()->is('products') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50'); ?> transition">
+               class="px-3 py-3 rounded-lg font-semibold text-sm <?php echo e(request()->routeIs('products.index') || request()->routeIs('products.show') || request()->routeIs('products.category') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50'); ?> transition">
                 <?php echo e(__('messages.products')); ?>
 
             </a>
             <a href="<?php echo e(route('exhibitions')); ?>" @click="open = false"
-               class="px-3 py-3 rounded-lg font-semibold text-sm <?php echo e(request()->is('exhibitions') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50'); ?> transition">
+               class="px-3 py-3 rounded-lg font-semibold text-sm <?php echo e(request()->routeIs('exhibitions') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50'); ?> transition">
                 <?php echo e(__('messages.exhibitions')); ?>
 
             </a>
             <a href="<?php echo e(route('collaboration.show')); ?>" @click="open = false"
-               class="px-3 py-3 rounded-lg font-semibold text-sm <?php echo e(request()->is('collaboration') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50'); ?> transition">
+               class="px-3 py-3 rounded-lg font-semibold text-sm <?php echo e(request()->routeIs('collaboration.show') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50'); ?> transition">
                 <?php echo e(__('messages.collaboration')); ?>
 
             </a>
             <a href="<?php echo e(route('contact.show')); ?>" @click="open = false"
-               class="px-3 py-3 rounded-lg font-semibold text-sm <?php echo e(request()->is('contact') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50'); ?> transition">
+               class="px-3 py-3 rounded-lg font-semibold text-sm <?php echo e(request()->routeIs('contact.show') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50'); ?> transition">
                 <?php echo e(__('messages.contact')); ?>
 
             </a>
