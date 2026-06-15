@@ -21,11 +21,13 @@ return new class extends Migration
         // ۴. حالا ستون‌ها رو به جیسون تبدیل می‌کنیم
         Schema::table('products', function (Blueprint $table) {
             $table->json('name')->change();
-            $table->json('slug')->change();
             $table->json('category')->change();
             $table->json('description')->change();
             $table->json('specs')->change();
         });
+
+        // slug را جداگانه تبدیل می‌کنیم چون ممکن است index داشته باشد
+        DB::statement('ALTER TABLE products MODIFY slug JSON');
     }
 
     public function down(): void
