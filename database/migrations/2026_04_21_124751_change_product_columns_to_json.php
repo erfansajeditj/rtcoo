@@ -26,7 +26,8 @@ return new class extends Migration
             $table->json('specs')->change();
         });
 
-        // slug را جداگانه تبدیل می‌کنیم چون ممکن است index داشته باشد
+        // ابتدا unique index روی slug را حذف می‌کنیم، سپس به JSON تبدیل می‌کنیم
+        DB::statement('ALTER TABLE products DROP INDEX products_slug_unique');
         DB::statement('ALTER TABLE products MODIFY slug JSON');
     }
 
