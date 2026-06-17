@@ -56,16 +56,14 @@ class ProductController extends Controller
 
     public function show($slug)
     {
-        $locale = app()->getLocale();
-
-        $product = Product::where("slug->{$locale}", $slug)
-            ->where('is_active', true)
-            ->first();
+        $product = Product::where(function ($q) use ($slug) {
+            $q->where('slug->en', $slug)
+              ->orWhere('slug->ru', $slug)
+              ->orWhere('slug->tg', $slug);
+        })->where('is_active', true)->first();
 
         if (!$product) {
-            $product = Product::where("slug->en", $slug)
-                ->where('is_active', true)
-                ->firstOrFail();
+            abort(404);
         }
 
         \App\Helpers\Tracker::log($product->id, 'view');
