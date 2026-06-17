@@ -201,6 +201,19 @@ return [
     'support_247_title' => '24/7 Technical Assistance',
     'support_247_desc' => 'Our dedicated team of engineers is available around the clock to provide immediate remote troubleshooting and on-site support.',
     'contact_support' => 'Contact Technical Support',
+
+    'faq_title' => 'Frequently Asked Questions',
+    'faq_subtitle' => 'Everything you need to know about Rozi Tib and our medical equipment.',
+    'faq_q1' => 'What types of medical equipment does Rozi Tib manufacture?',
+    'faq_a1' => 'Rozi Tib specializes in high-speed autoclaves, sterilization systems, and advanced medical devices for hospitals, clinics, and healthcare facilities. Our product range includes surgical sterilization units, diagnostic equipment, and critical care devices — all manufactured to IEC 60601-1 and ISO 13485 standards.',
+    'faq_q2' => 'Do you export medical equipment internationally?',
+    'faq_a2' => 'Yes. Rozi Tib is an internationally ready manufacturer based in Dushanbe, Tajikistan. We export our medical equipment across Central Asia, the Middle East, and beyond. Our products meet international certification requirements, making them suitable for use in healthcare facilities worldwide.',
+    'faq_q3' => 'What quality certifications do your products have?',
+    'faq_a3' => 'Our medical equipment complies with IEC 60601-1 (Medical Electrical Safety), ISO 13485 (Quality Management System for Medical Devices), and national IMED certification requirements. Every product undergoes rigorous in-house quality control testing before delivery.',
+    'faq_q4' => 'How can I request a price quote or product catalog?',
+    'faq_a4' => 'You can request a quote directly from any product page by clicking "Request Quote", or use our Contact form. For partnership inquiries and distributor catalogs, visit our Collaboration page. Our team typically responds within one business day.',
+    'faq_q5' => 'Do you provide after-sales support and warranty?',
+    'faq_a5' => 'Yes. Rozi Tib provides comprehensive after-sales support including 24/7 technical assistance, rapid spare parts supply, and extended warranties on all manufactured devices. We guarantee minimal downtime for all equipment delivered to healthcare facilities.',
 ];
 
 
