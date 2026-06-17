@@ -45,7 +45,7 @@
                         class="block w-full appearance-none bg-white border-2 border-brand-teal text-gray-800 font-bold py-2.5 px-4 pr-10 rtl:pr-4 rtl:pl-10 rounded-xl shadow-sm focus:outline-none focus:ring-4 focus:ring-brand-orange/20 focus:border-brand-orange hover:border-brand-orange transition-all duration-300 cursor-pointer">
                     
                     <!-- گزینه همه محصولات -->
-                    <option value="/products" {{ !isset($currentCategory) ? 'selected' : '' }}>
+                    <option value="{{ route('products.index') }}" {{ !isset($currentCategory) ? 'selected' : '' }}>
                         {{ __('messages.all_products') }}
                     </option>
                     
