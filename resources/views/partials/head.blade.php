@@ -40,7 +40,7 @@
 
 {{-- Open Graph (تلگرام/واتساپ/لینکدین) --}}
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Rozi Tib">
+<meta property="og:site_name" content="Razi Teb">
 <meta property="og:title" content="{{ $pageTitle }}">
 <meta property="og:description" content="{{ $pageDescription }}">
 <meta property="og:url" content="{{ $canonical }}">
@@ -63,7 +63,7 @@
     $orgSchema = [
         '@context'      => 'https://schema.org',
         '@type'         => ['MedicalOrganization', 'LocalBusiness'],
-        'name'          => 'Rozi Tib',
+        'name'          => 'Razi Teb',
         'alternateName' => 'RoziTib Medical Technologies',
         'url'           => url('/'),
         'logo'          => [
@@ -109,7 +109,7 @@
     $websiteSchema = [
         '@context'        => 'https://schema.org',
         '@type'           => 'WebSite',
-        'name'            => 'Rozi Tib',
+        'name'            => 'Razi Teb',
         'url'             => url('/'),
         'description'     => __('messages.footer_about_desc'),
         'inLanguage'      => ['en', 'tg', 'ru'],

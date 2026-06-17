@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}" dir="ltr">
 <head>
-   @include('partials.head', ['title' => __('messages.about_us') . ' - Rozi Tib'])
+   @include('partials.head', ['title' => __('messages.about_us') . ' - Razi Teb'])
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 

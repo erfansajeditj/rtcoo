@@ -49,7 +49,7 @@ return [
     'message' => 'Паём',
     'message_placeholder' => 'Чӣ тавр мо кӯмак карда метавонем?',
     'btn_send_message' => 'Фиристодани паём',
-    'hq_title' => 'Идораи марказии Rozi Tib',
+    'hq_title' => 'Идораи марказии Razi Teb',
     'hq_desc' => 'Душанбе, Тоҷикистон',
 
     // کلمات صفحه همکاری

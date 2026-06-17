@@ -2,7 +2,7 @@
       <div class="container mx-auto px-6 py-3 flex justify-between items-center">
 
         <a href="{{ route('home') }}" class="flex items-center gap-3 z-50 group">
-            <img src="{{ asset('logo.png') }}" alt="Rozi Tib" class="h-10 w-auto object-contain">
+            <img src="{{ asset('logo.png') }}" alt="Razi Teb" class="h-10 w-auto object-contain">
 
             <div class="h-6 w-px bg-gray-300 hidden md:block"></div>
 

@@ -2,7 +2,7 @@
 <html lang="{{ app()->getLocale() }}" dir="ltr">
     
 <head>
-   @include('partials.head', ['title' => __('messages.contact') . ' - Rozi Tib', 'description' => __('messages.contact_subtitle')])
+   @include('partials.head', ['title' => __('messages.contact') . ' - Razi Teb', 'description' => __('messages.contact_subtitle')])
 
    <style>
        .map-filter { filter: grayscale(100%); transition: filter 0.3s; }

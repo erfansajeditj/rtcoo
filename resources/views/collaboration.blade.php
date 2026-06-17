@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}" dir="ltr">
 <head>
-   @include('partials.head', ['title' => __('messages.collaboration') . ' - Rozi Tib', 'description' => __('messages.collab_subtitle')])
+   @include('partials.head', ['title' => __('messages.collaboration') . ' - Razi Teb', 'description' => __('messages.collab_subtitle')])
 
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">

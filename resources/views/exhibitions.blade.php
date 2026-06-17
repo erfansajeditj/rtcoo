@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}" dir="ltr">
 <head>
-   @include('partials.head', ['title' => __('messages.exhibitions') . ' - Rozi Tib', 'description' => __('messages.exhibitions_subtitle')])
+   @include('partials.head', ['title' => __('messages.exhibitions') . ' - Razi Teb', 'description' => __('messages.exhibitions_subtitle')])
 
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
@@ -160,7 +160,7 @@
             ] : null,
             'organizer'   => [
                 '@type' => 'Organization',
-                'name'  => 'Rozi Tib',
+                'name'  => 'Razi Teb',
                 'url'   => url('/'),
             ],
             'image'       => $ex->cover_image ? \Illuminate\Support\Facades\Storage::disk('public')->url($ex->cover_image) : asset('logo.png'),

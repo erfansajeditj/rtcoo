@@ -44,7 +44,7 @@ return [
 
     // کلمات صفحه درباره ما
     'about_us' => 'About Us',
-    'about_rozi_tib' => 'About Rozi Tib',
+    'about_rozi_tib' => 'About Razi Teb',
     'about_subtitle' => 'Leading the way in medical devices technology since 2022.',
     'who_we_are' => 'Who We Are',
     'who_we_are_desc' => 'Razi Tebis a premier manufacturer and supplier of advanced medical equipment, specializing in high-speed autoclaves and sterilization solutions. Our mission is to enhance patient safety by providing hospitals and clinics with reliable, efficient, and state-of-the-art technology.',

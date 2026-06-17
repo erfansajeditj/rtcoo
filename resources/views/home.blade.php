@@ -329,7 +329,7 @@
         'url'         => url()->current(),
         'inLanguage'  => app()->getLocale(),
         'isPartOf'    => ['@type' => 'WebSite', 'url' => url('/')],
-        'about'       => ['@type' => 'Organization', 'name' => 'Rozi Tib'],
+        'about'       => ['@type' => 'Organization', 'name' => 'Razi Teb'],
         'breadcrumb'  => [
             '@type'           => 'BreadcrumbList',
             'itemListElement' => [

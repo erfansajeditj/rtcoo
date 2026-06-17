@@ -475,7 +475,7 @@ class CollaborationResource extends Resource
                     ->form([
                         TextInput::make('subject')
                             ->label('موضوع ایمیل')
-                            ->default('پاسخ به درخواست همکاری شما - Rozi Tib')
+                            ->default('پاسخ به درخواست همکاری شما - Razi Teb')
                             ->required(),
                             
                         Textarea::make('message')
@@ -5027,7 +5027,7 @@ return [
 
     // کلمات صفحه درباره ما
     'about_us' => 'About Us',
-    'about_rozi_tib' => 'About Rozi Tib',
+    'about_rozi_tib' => 'About Razi Teb',
     'about_subtitle' => 'Leading the way in medical devices technology since 2022.',
     'who_we_are' => 'Who We Are',
     'who_we_are_desc' => 'Razi Tebis a premier manufacturer and supplier of advanced medical equipment, specializing in high-speed autoclaves and sterilization solutions. Our mission is to enhance patient safety by providing hospitals and clinics with reliable, efficient, and state-of-the-art technology.',
@@ -5482,7 +5482,7 @@ return [
     'message' => 'Сообщение',
     'message_placeholder' => 'Чем мы можем помочь?',
     'btn_send_message' => 'Отправить сообщение',
-    'hq_title' => 'Главный офис Rozi Tib',
+    'hq_title' => 'Главный офис Razi Teb',
     'hq_desc' => 'Душанбе, Таджикистан',
 
     // کلمات صفحه همکاری
@@ -5659,7 +5659,7 @@ return [
     'message' => 'Паём',
     'message_placeholder' => 'Чӣ тавр мо кӯмак карда метавонем?',
     'btn_send_message' => 'Фиристодани паём',
-    'hq_title' => 'Идораи марказии Rozi Tib',
+    'hq_title' => 'Идораи марказии Razi Teb',
     'hq_desc' => 'Душанбе, Тоҷикистон',
 
     // کلمات صفحه همکاری
@@ -6614,7 +6614,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}" dir="ltr">
 <head>
-   @include('partials.head', ['title' => __('messages.about_us') . ' - Rozi Tib'])
+   @include('partials.head', ['title' => __('messages.about_us') . ' - Razi Teb'])
 
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
@@ -7244,7 +7244,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}" dir="ltr">
 <head>
-   @include('partials.head', ['title' => __('messages.collaboration') . ' - Rozi Tib', 'description' => __('messages.collab_subtitle')])
+   @include('partials.head', ['title' => __('messages.collaboration') . ' - Razi Teb', 'description' => __('messages.collab_subtitle')])
 
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
@@ -7372,7 +7372,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 <html lang="{{ app()->getLocale() }}" dir="ltr">
     
 <head>
-   @include('partials.head', ['title' => __('messages.contact') . ' - Rozi Tib', 'description' => __('messages.contact_subtitle')])
+   @include('partials.head', ['title' => __('messages.contact') . ' - Razi Teb', 'description' => __('messages.contact_subtitle')])
 
    <style>
        .map-filter { filter: grayscale(100%); transition: filter 0.3s; }
@@ -7637,7 +7637,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}" dir="ltr">
 <head>
-   @include('partials.head', ['title' => __('messages.exhibitions') . ' - Rozi Tib', 'description' => __('messages.exhibitions_subtitle')])
+   @include('partials.head', ['title' => __('messages.exhibitions') . ' - Razi Teb', 'description' => __('messages.exhibitions_subtitle')])
 
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
@@ -8206,7 +8206,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 {{-- Open Graph (تلگرام/واتساپ/لینکدین) --}}
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Rozi Tib">
+<meta property="og:site_name" content="Razi Teb">
 <meta property="og:title" content="{{ $pageTitle }}">
 <meta property="og:description" content="{{ $pageDescription }}">
 <meta property="og:url" content="{{ $canonical }}">
@@ -8231,7 +8231,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
       <div class="container mx-auto px-6 py-3 flex justify-between items-center">
         
         <a href="{{ route('home') }}" class="flex items-center gap-3 z-50 group">
-            <img src="{{ asset('logo.png') }}" alt="Rozi Tib" class="h-10 w-auto object-contain">
+            <img src="{{ asset('logo.png') }}" alt="Razi Teb" class="h-10 w-auto object-contain">
             
             <div class="h-6 w-px bg-gray-300 hidden md:block"></div>
 
@@ -8314,7 +8314,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
     
 <head>
     @include('partials.head', [
-        'title'       => $product->name . ' - Rozi Tib',
+        'title'       => $product->name . ' - Razi Teb',
         'description' => \Illuminate\Support\Str::limit(strip_tags((string) $product->description), 155),
         'image'       => $product->image ? asset('storage/' . $product->image) : asset('logo.png'),
     ])
@@ -8534,8 +8534,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
         'description' => \Illuminate\Support\Str::limit(strip_tags((string) $product->description), 300),
         'category'    => $product->category,
         'sku'         => (string) $product->id,
-        'brand'       => ['@type' => 'Brand', 'name' => 'Rozi Tib'],
-        'manufacturer'=> ['@type' => 'Organization', 'name' => 'Rozi Tib', 'url' => url('/')],
+        'brand'       => ['@type' => 'Brand', 'name' => 'Razi Teb'],
+        'manufacturer'=> ['@type' => 'Organization', 'name' => 'Razi Teb', 'url' => url('/')],
     ];
 
     $breadcrumbSchema = [
@@ -8566,7 +8566,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}" dir="ltr">
 <head>
-   @include('partials.head', ['title' => __('messages.products') . ' - Rozi Tib', 'description' => __('messages.products_subtitle')])
+   @include('partials.head', ['title' => __('messages.products') . ' - Razi Teb', 'description' => __('messages.products_subtitle')])
 
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
@@ -9143,7 +9143,7 @@ services.json
 <!DOCTYPE html>
 <html lang="<?php echo e(app()->getLocale()); ?>" dir="ltr">
 <head>
-   <?php echo $__env->make('partials.head', ['title' => __('messages.about_us') . ' - Rozi Tib'], array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
+   <?php echo $__env->make('partials.head', ['title' => __('messages.about_us') . ' - Razi Teb'], array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
@@ -9579,7 +9579,7 @@ services.json
       <div class="container mx-auto px-6 py-3 flex justify-between items-center">
         
         <a href="<?php echo e(route('home')); ?>" class="flex items-center gap-3 z-50 group">
-            <img src="<?php echo e(asset('logo.png')); ?>" alt="Rozi Tib" class="h-10 w-auto object-contain">
+            <img src="<?php echo e(asset('logo.png')); ?>" alt="Razi Teb" class="h-10 w-auto object-contain">
             
             <div class="h-6 w-px bg-gray-300 hidden md:block"></div>
 
@@ -9701,7 +9701,7 @@ services.json
 
 
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Rozi Tib">
+<meta property="og:site_name" content="Razi Teb">
 <meta property="og:title" content="<?php echo e($pageTitle); ?>">
 <meta property="og:description" content="<?php echo e($pageDescription); ?>">
 <meta property="og:url" content="<?php echo e($canonical); ?>">
@@ -9817,7 +9817,7 @@ services.json
     
 <head>
     <?php echo $__env->make('partials.head', [
-        'title'       => $product->name . ' - Rozi Tib',
+        'title'       => $product->name . ' - Razi Teb',
         'description' => \Illuminate\Support\Str::limit(strip_tags((string) $product->description), 155),
         'image'       => $product->image ? asset('storage/' . $product->image) : asset('logo.png'),
     ], array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
@@ -10039,7 +10039,7 @@ services.json
 <!DOCTYPE html>
 <html lang="<?php echo e(app()->getLocale()); ?>" dir="ltr">
 <head>
-   <?php echo $__env->make('partials.head', ['title' => __('messages.products') . ' - Rozi Tib', 'description' => __('messages.products_subtitle')], array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
+   <?php echo $__env->make('partials.head', ['title' => __('messages.products') . ' - Razi Teb', 'description' => __('messages.products_subtitle')], array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">

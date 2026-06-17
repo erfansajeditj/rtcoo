@@ -49,7 +49,7 @@ return [
     'message' => 'Сообщение',
     'message_placeholder' => 'Чем мы можем помочь?',
     'btn_send_message' => 'Отправить сообщение',
-    'hq_title' => 'Главный офис Rozi Tib',
+    'hq_title' => 'Главный офис Razi Teb',
     'hq_desc' => 'Душанбе, Таджикистан',
 
     // کلمات صفحه همکاری

@@ -3,7 +3,7 @@
     
 <head>
     @include('partials.head', [
-        'title'       => $product->name . ' - Rozi Tib',
+        'title'       => $product->name . ' - Razi Teb',
         'description' => \Illuminate\Support\Str::limit(strip_tags((string) $product->description), 155),
         'image'       => $product->image ? asset('storage/' . $product->image) : asset('logo.png'),
     ])
@@ -223,8 +223,8 @@
         'description' => \Illuminate\Support\Str::limit(strip_tags((string) $product->description), 300),
         'category'    => $product->category,
         'sku'         => (string) $product->id,
-        'brand'       => ['@type' => 'Brand', 'name' => 'Rozi Tib'],
-        'manufacturer'=> ['@type' => 'Organization', 'name' => 'Rozi Tib', 'url' => url('/')],
+        'brand'       => ['@type' => 'Brand', 'name' => 'Razi Teb'],
+        'manufacturer'=> ['@type' => 'Organization', 'name' => 'Razi Teb', 'url' => url('/')],
     ];
 
     $breadcrumbSchema = [

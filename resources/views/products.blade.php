@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}" dir="ltr">
 <head>
-   @include('partials.head', ['title' => __('messages.products') . ' - Rozi Tib', 'description' => __('messages.products_subtitle')])
+   @include('partials.head', ['title' => __('messages.products') . ' - Razi Teb', 'description' => __('messages.products_subtitle')])
 
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
@@ -157,7 +157,7 @@
     $itemListSchema = [
         '@context'        => 'https://schema.org',
         '@type'           => 'ItemList',
-        'name'            => __('messages.products') . ' - Rozi Tib',
+        'name'            => __('messages.products') . ' - Razi Teb',
         'description'     => __('messages.products_subtitle'),
         'url'             => url()->current(),
         'numberOfItems'   => $position - 1,
