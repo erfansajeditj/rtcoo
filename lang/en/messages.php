@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 return [
     'home' => 'Home',
     'about' => 'About Us',
@@ -141,7 +141,7 @@ return [
     // --- About Us Page ---
     'who_we_are' => 'Who We Are',
     'about_hero_title' => 'Engineering the Future of <span class="text-brand-teal">Healthcare</span>',
-    'about_hero_desc' => 'RoziTib Medical Technologies is a pioneering manufacturer dedicated to engineering advanced, life-saving medical equipment. With a relentless focus on quality and innovation, we develop comprehensive healthcare solutions that meet the highest international standards, empowering medical professionals in critical care environments worldwide.',
+    'about_hero_desc' => 'RaziTeb Medical Technologies is a pioneering manufacturer dedicated to engineering advanced, life-saving medical equipment. With a relentless focus on quality and innovation, we develop comprehensive healthcare solutions that meet the highest international standards, empowering medical professionals in critical care environments worldwide.',
     
     'our_mission_title' => 'Our Mission',
     'our_mission_desc' => 'To empower healthcare professionals globally with reliable, accessible, and high-tech medical solutions that elevate patient safety and clinical outcomes.',
@@ -150,10 +150,10 @@ return [
     'our_vision_desc' => 'To be at the forefront of medical technology, setting global standards in healthcare engineering and bridging the gap between digital innovation and physical care.',
 
     'our_story' => 'Our Story',
-    'journey_title' => 'The RoziTib <span class="text-brand-teal">Journey</span>',
+    'journey_title' => 'The RaziTeb <span class="text-brand-teal">Journey</span>',
     
     'timeline_2022_title' => 'The Foundation',
-    'timeline_2022_desc' => 'RoziTib was established with a commitment to redefining medical manufacturing. We set out with a clear vision to build reliable, high-precision healthcare solutions from the ground up, focusing on uncompromising quality.',
+    'timeline_2022_desc' => 'RaziTeb was established with a commitment to redefining medical manufacturing. We set out with a clear vision to build reliable, high-precision healthcare solutions from the ground up, focusing on uncompromising quality.',
     
     'timeline_2024_title' => 'R&D and Innovation Expansion',
     'timeline_2024_desc' => 'A major leap forward. We significantly expanded our capabilities by launching a dedicated Research & Development division. This milestone allowed us to integrate advanced engineering and smart technologies into our growing operations.',
@@ -163,7 +163,7 @@ return [
 
     'rd_and_manufacturing' => 'R&D & Manufacturing',
     'rd_title' => 'Powered by <span class="text-brand-orange">In-House</span> Innovation',
-    'rd_desc' => 'At RoziTib, we are proud to be true innovators, not merely assemblers. Our state-of-the-art Research & Development department is the beating heart of our operations. We take full ownership of the entire production lifecycle—from the initial blueprints and rigorous hardware engineering to custom software development and smart platform integration.',
+    'rd_desc' => 'At RaziTeb, we are proud to be true innovators, not merely assemblers. Our state-of-the-art Research & Development department is the beating heart of our operations. We take full ownership of the entire production lifecycle—from the initial blueprints and rigorous hardware engineering to custom software development and smart platform integration.',
 
     'hardware_title' => 'Hardware Engineering',
     'hardware_desc' => 'Precision at every level. We design and manufacture durable, industrial-grade components and circuit boards, ensuring every device is built for maximum reliability in critical environments.',
@@ -179,7 +179,7 @@ return [
 
     'our_commitment' => 'Our Commitment',
     'support_title' => 'Beyond the Sale: Our <span class="text-brand-teal">Unwavering Support</span>',
-    'support_desc' => 'We believe that delivering a medical device is just the beginning of our partnership. Recognizing the critical nature of healthcare environments, RoziTib provides an uncompromising after-sales ecosystem. We guarantee rapid spare parts supply, comprehensive warranties, and 24/7 expert technical assistance. Our goal is to ensure zero downtime, so you can focus entirely on saving lives.',
+    'support_desc' => 'We believe that delivering a medical device is just the beginning of our partnership. Recognizing the critical nature of healthcare environments, RaziTeb provides an uncompromising after-sales ecosystem. We guarantee rapid spare parts supply, comprehensive warranties, and 24/7 expert technical assistance. Our goal is to ensure zero downtime, so you can focus entirely on saving lives.',
 
     'core_values' => 'Core Values',
     'values_title' => 'The Pillars of Our <span class="text-brand-orange">Promise</span>',
@@ -197,7 +197,7 @@ return [
     'warranty_title' => 'Comprehensive Warranty',
     'warranty_desc' => 'Long-term protection for your investment, ensuring your equipment operates at peak performance without unexpected costs.',
     'parts_title' => 'Rapid Parts Supply',
-    'parts_desc' => 'Direct access to genuine RoziTib spare parts with expedited shipping, eliminating critical delays in maintenance.',
+    'parts_desc' => 'Direct access to genuine RaziTeb spare parts with expedited shipping, eliminating critical delays in maintenance.',
     'support_247_title' => '24/7 Technical Assistance',
     'support_247_desc' => 'Our dedicated team of engineers is available around the clock to provide immediate remote troubleshooting and on-site support.',
     'contact_support' => 'Contact Technical Support',

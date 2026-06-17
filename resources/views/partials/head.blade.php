@@ -1,4 +1,4 @@
-@php
+﻿@php
     // نگاشت کد زبان → فرمت og:locale
     $ogLocales = ['en' => 'en_US', 'tg' => 'tg_TJ', 'ru' => 'ru_RU'];
     $current   = app()->getLocale();
@@ -64,7 +64,7 @@
         '@context'      => 'https://schema.org',
         '@type'         => ['MedicalOrganization', 'LocalBusiness'],
         'name'          => 'Razi Teb',
-        'alternateName' => 'RoziTib Medical Technologies',
+        'alternateName' => 'RaziTeb Medical Technologies',
         'url'           => url('/'),
         'logo'          => [
             '@type' => 'ImageObject',
@@ -72,7 +72,7 @@
         ],
         'image'       => asset('logo.png'),
         'description' => __('messages.footer_about_desc'),
-        'email'       => 'info@rozitib.com',
+        'email'       => 'info@RaziTeb.com',
         'telephone'   => '+992931102730',
         'address'     => [
             '@type'           => 'PostalAddress',

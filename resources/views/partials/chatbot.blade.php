@@ -1,4 +1,4 @@
-<div x-data="chatBot()" class="fixed bottom-6 right-6 z-50 font-sans" dir="ltr">
+﻿<div x-data="chatBot()" class="fixed bottom-6 right-6 z-50 font-sans" dir="ltr">
     
     <div x-show="isOpen" 
          x-transition:enter="transition ease-out duration-300 transform"
@@ -14,7 +14,7 @@
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-xl">🤖</div>
                 <div>
-                    <h3 class="font-bold text-lg leading-tight">RoziTib Assistant</h3>
+                    <h3 class="font-bold text-lg leading-tight">RaziTeb Assistant</h3>
                     <span class="text-xs text-teal-100 flex items-center gap-1">
                         <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> Online
                     </span>
@@ -79,7 +79,7 @@
             userInput: '',
             isLoading: false,
             messages: [
-                { role: 'bot', text: 'Hello! I am the RoziTib Smart Assistant. How can I help you today?' }
+                { role: 'bot', text: 'Hello! I am the RaziTeb Smart Assistant. How can I help you today?' }
             ],
             
             async sendMessage() {

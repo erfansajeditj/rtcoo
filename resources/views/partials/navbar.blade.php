@@ -1,4 +1,4 @@
-<nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-2xl shadow-brand-teal/40 ..." x-data="{ open: false }">
+﻿<nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-2xl shadow-brand-teal/40 ..." x-data="{ open: false }">
       <div class="container mx-auto px-6 py-3 flex justify-between items-center">
 
         <a href="{{ route('home') }}" class="flex items-center gap-3 z-50 group">
@@ -10,7 +10,7 @@
 
             <div class="flex flex-col justify-center">
                 <span class="text-xl font-bold text-gray-900 tracking-tight leading-none">
-                    Rozi<span class="text-brand-teal">Tib</span>
+                    Razi<span class="text-brand-teal">Teb</span>
                 </span>
                 <span class="text-[10px] text-gray-500 font-bold tracking-widest uppercase mt-0.5">
                     {{ __('messages.slogan') }}

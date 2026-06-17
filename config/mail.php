@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 return [
 
@@ -79,6 +79,6 @@ return [
     ],
 
 
-    'admin_email' => env('ADMIN_EMAIL', 'rozitib.co@gmail.com'),
+    'admin_email' => env('ADMIN_EMAIL', 'RaziTeb.co@gmail.com'),
 
 ];
