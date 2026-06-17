@@ -72,7 +72,7 @@
         ],
         'image'       => asset('logo.png'),
         'description' => __('messages.footer_about_desc'),
-        'email'       => 'info@Razi Teb.com',
+        'email'       => 'info@rtcoo.com',
         'telephone'   => '+992931102730',
         'address'     => [
             '@type'           => 'PostalAddress',
