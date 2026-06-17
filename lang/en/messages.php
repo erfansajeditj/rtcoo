@@ -194,6 +194,13 @@ return [
     'value_safety_title' => 'Safety',
     'value_safety_desc' => 'Prioritizing the ultimate protection and well-being of both patients and medical professionals in every product we build.',
 
+    'warranty_title' => 'Comprehensive Warranty',
+    'warranty_desc' => 'Long-term protection for your investment, ensuring your equipment operates at peak performance without unexpected costs.',
+    'parts_title' => 'Rapid Parts Supply',
+    'parts_desc' => 'Direct access to genuine RoziTib spare parts with expedited shipping, eliminating critical delays in maintenance.',
+    'support_247_title' => '24/7 Technical Assistance',
+    'support_247_desc' => 'Our dedicated team of engineers is available around the clock to provide immediate remote troubleshooting and on-site support.',
+    'contact_support' => 'Contact Technical Support',
 ];
 
 
