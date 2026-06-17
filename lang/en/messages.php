@@ -47,7 +47,7 @@ return [
     'about_rozi_tib' => 'About Razi Teb',
     'about_subtitle' => 'Leading the way in medical devices technology since 2022.',
     'who_we_are' => 'Who We Are',
-    'who_we_are_desc' => 'Razi Tebis a premier manufacturer and supplier of advanced medical equipment, specializing in high-speed autoclaves and sterilization solutions. Our mission is to enhance patient safety by providing hospitals and clinics with reliable, efficient, and state-of-the-art technology.',
+    'who_we_are_desc' => 'Razi Teb is a premier manufacturer and supplier of advanced medical equipment, specializing in high-speed autoclaves and sterilization solutions. Our mission is to enhance patient safety by providing hospitals and clinics with reliable, efficient, and state-of-the-art technology.',
     'our_vision' => 'Our Vision',
     'our_vision_desc' => 'To be the most trusted name in medical sterilization across the Middle East and beyond, known for our commitment to quality, innovation, and customer service.',
     'years_experience' => 'Years Experience',
@@ -82,7 +82,7 @@ return [
     'message' => 'Message',
     'message_placeholder' => 'How can we help?',
     'btn_send_message' => 'Send Message',
-    'hq_title' => 'Razi TebHQ',
+    'hq_title' => 'Razi Teb HQ',
     'hq_desc' => 'Dushanbe, Tajikistan',
 
 
@@ -110,7 +110,7 @@ return [
 
     // کلمات صفحه نمایشگاه‌ها
     'events_exhibitions' => 'Events & Exhibitions',
-    'exhibitions_subtitle' => 'Meet Razi Tebat international healthcare events.',
+    'exhibitions_subtitle' => 'Meet Razi Teb at international healthcare events.',
     'no_exhibitions_yet' => 'No exhibitions yet',
     'add_exhibitions_admin' => 'Please add exhibitions from the admin panel.',
 
@@ -141,7 +141,7 @@ return [
     // --- About Us Page ---
     'who_we_are' => 'Who We Are',
     'about_hero_title' => 'Engineering the Future of <span class="text-brand-teal">Healthcare</span>',
-    'about_hero_desc' => 'RaziTeb Medical Technologies is a pioneering manufacturer dedicated to engineering advanced, life-saving medical equipment. With a relentless focus on quality and innovation, we develop comprehensive healthcare solutions that meet the highest international standards, empowering medical professionals in critical care environments worldwide.',
+    'about_hero_desc' => 'Razi Teb Medical Technologies is a pioneering manufacturer dedicated to engineering advanced, life-saving medical equipment. With a relentless focus on quality and innovation, we develop comprehensive healthcare solutions that meet the highest international standards, empowering medical professionals in critical care environments worldwide.',
     
     'our_mission_title' => 'Our Mission',
     'our_mission_desc' => 'To empower healthcare professionals globally with reliable, accessible, and high-tech medical solutions that elevate patient safety and clinical outcomes.',
@@ -150,10 +150,10 @@ return [
     'our_vision_desc' => 'To be at the forefront of medical technology, setting global standards in healthcare engineering and bridging the gap between digital innovation and physical care.',
 
     'our_story' => 'Our Story',
-    'journey_title' => 'The RaziTeb <span class="text-brand-teal">Journey</span>',
+    'journey_title' => 'The Razi Teb <span class="text-brand-teal">Journey</span>',
     
     'timeline_2022_title' => 'The Foundation',
-    'timeline_2022_desc' => 'RaziTeb was established with a commitment to redefining medical manufacturing. We set out with a clear vision to build reliable, high-precision healthcare solutions from the ground up, focusing on uncompromising quality.',
+    'timeline_2022_desc' => 'Razi Teb was established with a commitment to redefining medical manufacturing. We set out with a clear vision to build reliable, high-precision healthcare solutions from the ground up, focusing on uncompromising quality.',
     
     'timeline_2024_title' => 'R&D and Innovation Expansion',
     'timeline_2024_desc' => 'A major leap forward. We significantly expanded our capabilities by launching a dedicated Research & Development division. This milestone allowed us to integrate advanced engineering and smart technologies into our growing operations.',
@@ -163,7 +163,7 @@ return [
 
     'rd_and_manufacturing' => 'R&D & Manufacturing',
     'rd_title' => 'Powered by <span class="text-brand-orange">In-House</span> Innovation',
-    'rd_desc' => 'At RaziTeb, we are proud to be true innovators, not merely assemblers. Our state-of-the-art Research & Development department is the beating heart of our operations. We take full ownership of the entire production lifecycle—from the initial blueprints and rigorous hardware engineering to custom software development and smart platform integration.',
+    'rd_desc' => 'At Razi Teb, we are proud to be true innovators, not merely assemblers. Our state-of-the-art Research & Development department is the beating heart of our operations. We take full ownership of the entire production lifecycle—from the initial blueprints and rigorous hardware engineering to custom software development and smart platform integration.',
 
     'hardware_title' => 'Hardware Engineering',
     'hardware_desc' => 'Precision at every level. We design and manufacture durable, industrial-grade components and circuit boards, ensuring every device is built for maximum reliability in critical environments.',
@@ -179,7 +179,7 @@ return [
 
     'our_commitment' => 'Our Commitment',
     'support_title' => 'Beyond the Sale: Our <span class="text-brand-teal">Unwavering Support</span>',
-    'support_desc' => 'We believe that delivering a medical device is just the beginning of our partnership. Recognizing the critical nature of healthcare environments, RaziTeb provides an uncompromising after-sales ecosystem. We guarantee rapid spare parts supply, comprehensive warranties, and 24/7 expert technical assistance. Our goal is to ensure zero downtime, so you can focus entirely on saving lives.',
+    'support_desc' => 'We believe that delivering a medical device is just the beginning of our partnership. Recognizing the critical nature of healthcare environments, Razi Teb provides an uncompromising after-sales ecosystem. We guarantee rapid spare parts supply, comprehensive warranties, and 24/7 expert technical assistance. Our goal is to ensure zero downtime, so you can focus entirely on saving lives.',
 
     'core_values' => 'Core Values',
     'values_title' => 'The Pillars of Our <span class="text-brand-orange">Promise</span>',
@@ -197,23 +197,23 @@ return [
     'warranty_title' => 'Comprehensive Warranty',
     'warranty_desc' => 'Long-term protection for your investment, ensuring your equipment operates at peak performance without unexpected costs.',
     'parts_title' => 'Rapid Parts Supply',
-    'parts_desc' => 'Direct access to genuine RaziTeb spare parts with expedited shipping, eliminating critical delays in maintenance.',
+    'parts_desc' => 'Direct access to genuine Razi Teb spare parts with expedited shipping, eliminating critical delays in maintenance.',
     'support_247_title' => '24/7 Technical Assistance',
     'support_247_desc' => 'Our dedicated team of engineers is available around the clock to provide immediate remote troubleshooting and on-site support.',
     'contact_support' => 'Contact Technical Support',
 
     'faq_title' => 'Frequently Asked Questions',
-    'faq_subtitle' => 'Everything you need to know about Razi Teband our medical equipment.',
-    'faq_q1' => 'What types of medical equipment does Razi Tebmanufacture?',
-    'faq_a1' => 'Razi Tebspecializes in high-speed autoclaves, sterilization systems, and advanced medical devices for hospitals, clinics, and healthcare facilities. Our product range includes surgical sterilization units, diagnostic equipment, and critical care devices — all manufactured to IEC 60601-1 and ISO 13485 standards.',
+    'faq_subtitle' => 'Everything you need to know about Razi Teb and our medical equipment.',
+    'faq_q1' => 'What types of medical equipment does Razi Teb manufacture?',
+    'faq_a1' => 'Razi Teb specializes in high-speed autoclaves, sterilization systems, and advanced medical devices for hospitals, clinics, and healthcare facilities. Our product range includes surgical sterilization units, diagnostic equipment, and critical care devices — all manufactured to IEC 60601-1 and ISO 13485 standards.',
     'faq_q2' => 'Do you export medical equipment internationally?',
-    'faq_a2' => 'Yes. Razi Tebis an internationally ready manufacturer based in Dushanbe, Tajikistan. We export our medical equipment across Central Asia, the Middle East, and beyond. Our products meet international certification requirements, making them suitable for use in healthcare facilities worldwide.',
+    'faq_a2' => 'Yes. Razi Teb is an internationally ready manufacturer based in Dushanbe, Tajikistan. We export our medical equipment across Central Asia, the Middle East, and beyond. Our products meet international certification requirements, making them suitable for use in healthcare facilities worldwide.',
     'faq_q3' => 'What quality certifications do your products have?',
     'faq_a3' => 'Our medical equipment complies with IEC 60601-1 (Medical Electrical Safety), ISO 13485 (Quality Management System for Medical Devices), and national IMED certification requirements. Every product undergoes rigorous in-house quality control testing before delivery.',
     'faq_q4' => 'How can I request a price quote or product catalog?',
     'faq_a4' => 'You can request a quote directly from any product page by clicking "Request Quote", or use our Contact form. For partnership inquiries and distributor catalogs, visit our Collaboration page. Our team typically responds within one business day.',
     'faq_q5' => 'Do you provide after-sales support and warranty?',
-    'faq_a5' => 'Yes. Razi Tebprovides comprehensive after-sales support including 24/7 technical assistance, rapid spare parts supply, and extended warranties on all manufactured devices. We guarantee minimal downtime for all equipment delivered to healthcare facilities.',
+    'faq_a5' => 'Yes. Razi Teb provides comprehensive after-sales support including 24/7 technical assistance, rapid spare parts supply, and extended warranties on all manufactured devices. We guarantee minimal downtime for all equipment delivered to healthcare facilities.',
 ];
 
 

@@ -64,7 +64,7 @@
         '@context'      => 'https://schema.org',
         '@type'         => ['MedicalOrganization', 'LocalBusiness'],
         'name'          => 'Razi Teb',
-        'alternateName' => 'RaziTeb Medical Technologies',
+        'alternateName' => 'Razi Teb Medical Technologies',
         'url'           => url('/'),
         'logo'          => [
             '@type' => 'ImageObject',
@@ -72,7 +72,7 @@
         ],
         'image'       => asset('logo.png'),
         'description' => __('messages.footer_about_desc'),
-        'email'       => 'info@RaziTeb.com',
+        'email'       => 'info@Razi Teb.com',
         'telephone'   => '+992931102730',
         'address'     => [
             '@type'           => 'PostalAddress',

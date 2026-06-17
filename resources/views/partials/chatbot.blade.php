@@ -14,7 +14,7 @@
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-xl">🤖</div>
                 <div>
-                    <h3 class="font-bold text-lg leading-tight">RaziTeb Assistant</h3>
+                    <h3 class="font-bold text-lg leading-tight">Razi Teb Assistant</h3>
                     <span class="text-xs text-teal-100 flex items-center gap-1">
                         <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> Online
                     </span>
@@ -79,7 +79,7 @@
             userInput: '',
             isLoading: false,
             messages: [
-                { role: 'bot', text: 'Hello! I am the RaziTeb Smart Assistant. How can I help you today?' }
+                { role: 'bot', text: 'Hello! I am the Razi Teb Smart Assistant. How can I help you today?' }
             ],
             
             async sendMessage() {

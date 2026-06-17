@@ -7,7 +7,7 @@
             
             <!-- درباره ما -->
             <div>
-                <h3 class="text-2xl font-bold mb-4 text-orange-500">RaziTeb</h3>
+                <h3 class="text-2xl font-bold mb-4 text-orange-500">Razi Teb</h3>
                 <p class="text-slate-400 text-sm leading-relaxed mb-4">
                     {{ __('messages.footer_about_desc') }}
                 </p>
@@ -27,7 +27,7 @@
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 mr-3 text-teal-400 rtl:ml-3 rtl:mr-0 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        <span>info@RaziTeb.com</span>
+                        <span>info@Razi Teb.com</span>
                     </li>
                 </ul>
             </div>
@@ -71,7 +71,7 @@
             </div>
 
             <!-- کپی‌رایت (این میره سمت چپ تو حالت RTL) -->
-            <p class="text-sm text-slate-500" dir="ltr">&copy; 2026 RaziTeb Medical Technologies. All rights reserved.</p>
+            <p class="text-sm text-slate-500" dir="ltr">&copy; 2026 Razi Teb Medical Technologies. All rights reserved.</p>
             
         </div>
 
