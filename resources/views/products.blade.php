@@ -51,7 +51,7 @@
                     
                     <!-- لود کردن گروه‌ها -->
                     @foreach($categories as $cat)
-                        <option value="/products/category/{{ $cat }}" {{ (isset($currentCategory) && $currentCategory == $cat) ? 'selected' : '' }}>
+                        <option value="{{ route('products.category', $cat) }}" {{ (isset($currentCategory) && $currentCategory == $cat) ? 'selected' : '' }}>
                             {{ $cat }}
                         </option>
                     @endforeach
