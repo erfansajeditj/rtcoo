@@ -3,7 +3,6 @@
 namespace App\Console\Commands;
 
 use App\Models\Product;
-use App\Models\Exhibition;
 use Illuminate\Console\Command;
 use Stichoza\GoogleTranslate\GoogleTranslate;
 
@@ -18,10 +17,6 @@ class AutoTranslate extends Command
 
         if ($model === 'all' || $model === 'products') {
             $this->translateModel(Product::all(), 'products', ['name', 'description', 'category', 'specs']);
-        }
-
-        if ($model === 'all' || $model === 'exhibitions') {
-            $this->translateModel(Exhibition::all(), 'exhibitions', ['title', 'description']);
         }
 
         if ($model === 'all' || $model === 'lang') {
