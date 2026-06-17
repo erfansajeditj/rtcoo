@@ -1,4 +1,4 @@
-﻿<div x-data="chatBot()" class="fixed bottom-6 right-6 z-50 font-sans" dir="ltr">
+<div x-data="chatBot()" class="fixed bottom-6 right-6 z-50 font-sans" dir="ltr">
     
     <div x-show="isOpen" 
          x-transition:enter="transition ease-out duration-300 transform"

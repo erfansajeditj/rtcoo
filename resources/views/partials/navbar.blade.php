@@ -1,4 +1,4 @@
-﻿<nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-2xl shadow-brand-teal/40 ..." x-data="{ open: false }">
+<nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-2xl shadow-brand-teal/40 ..." x-data="{ open: false }">
       <div class="container mx-auto px-6 py-3 flex justify-between items-center">
 
         <a href="{{ route('home') }}" class="flex items-center gap-3 z-50 group">

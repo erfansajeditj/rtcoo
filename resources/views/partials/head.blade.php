@@ -1,4 +1,4 @@
-﻿@php
+@php
     // نگاشت کد زبان → فرمت og:locale
     $ogLocales = ['en' => 'en_US', 'tg' => 'tg_TJ', 'ru' => 'ru_RU'];
     $current   = app()->getLocale();

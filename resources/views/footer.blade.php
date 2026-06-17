@@ -1,4 +1,4 @@
-﻿
+
 <!-- بخش فوتر (پاورقی) -->
 <!-- ========================================== -->
 <footer class="bg-slate-900 text-white pt-16 pb-8 border-t-4 border-teal-600 mt-12">
