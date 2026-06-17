@@ -47,7 +47,7 @@ return [
     'about_rozi_tib' => 'About Rozi Tib',
     'about_subtitle' => 'Leading the way in medical devices technology since 2022.',
     'who_we_are' => 'Who We Are',
-    'who_we_are_desc' => 'Rozi Tib is a premier manufacturer and supplier of advanced medical equipment, specializing in high-speed autoclaves and sterilization solutions. Our mission is to enhance patient safety by providing hospitals and clinics with reliable, efficient, and state-of-the-art technology.',
+    'who_we_are_desc' => 'Razi Tebis a premier manufacturer and supplier of advanced medical equipment, specializing in high-speed autoclaves and sterilization solutions. Our mission is to enhance patient safety by providing hospitals and clinics with reliable, efficient, and state-of-the-art technology.',
     'our_vision' => 'Our Vision',
     'our_vision_desc' => 'To be the most trusted name in medical sterilization across the Middle East and beyond, known for our commitment to quality, innovation, and customer service.',
     'years_experience' => 'Years Experience',
@@ -82,7 +82,7 @@ return [
     'message' => 'Message',
     'message_placeholder' => 'How can we help?',
     'btn_send_message' => 'Send Message',
-    'hq_title' => 'Rozi Tib HQ',
+    'hq_title' => 'Razi TebHQ',
     'hq_desc' => 'Dushanbe, Tajikistan',
 
 
@@ -110,7 +110,7 @@ return [
 
     // کلمات صفحه نمایشگاه‌ها
     'events_exhibitions' => 'Events & Exhibitions',
-    'exhibitions_subtitle' => 'Meet Rozi Tib at international healthcare events.',
+    'exhibitions_subtitle' => 'Meet Razi Tebat international healthcare events.',
     'no_exhibitions_yet' => 'No exhibitions yet',
     'add_exhibitions_admin' => 'Please add exhibitions from the admin panel.',
 
@@ -203,17 +203,17 @@ return [
     'contact_support' => 'Contact Technical Support',
 
     'faq_title' => 'Frequently Asked Questions',
-    'faq_subtitle' => 'Everything you need to know about Rozi Tib and our medical equipment.',
-    'faq_q1' => 'What types of medical equipment does Rozi Tib manufacture?',
-    'faq_a1' => 'Rozi Tib specializes in high-speed autoclaves, sterilization systems, and advanced medical devices for hospitals, clinics, and healthcare facilities. Our product range includes surgical sterilization units, diagnostic equipment, and critical care devices — all manufactured to IEC 60601-1 and ISO 13485 standards.',
+    'faq_subtitle' => 'Everything you need to know about Razi Teband our medical equipment.',
+    'faq_q1' => 'What types of medical equipment does Razi Tebmanufacture?',
+    'faq_a1' => 'Razi Tebspecializes in high-speed autoclaves, sterilization systems, and advanced medical devices for hospitals, clinics, and healthcare facilities. Our product range includes surgical sterilization units, diagnostic equipment, and critical care devices — all manufactured to IEC 60601-1 and ISO 13485 standards.',
     'faq_q2' => 'Do you export medical equipment internationally?',
-    'faq_a2' => 'Yes. Rozi Tib is an internationally ready manufacturer based in Dushanbe, Tajikistan. We export our medical equipment across Central Asia, the Middle East, and beyond. Our products meet international certification requirements, making them suitable for use in healthcare facilities worldwide.',
+    'faq_a2' => 'Yes. Razi Tebis an internationally ready manufacturer based in Dushanbe, Tajikistan. We export our medical equipment across Central Asia, the Middle East, and beyond. Our products meet international certification requirements, making them suitable for use in healthcare facilities worldwide.',
     'faq_q3' => 'What quality certifications do your products have?',
     'faq_a3' => 'Our medical equipment complies with IEC 60601-1 (Medical Electrical Safety), ISO 13485 (Quality Management System for Medical Devices), and national IMED certification requirements. Every product undergoes rigorous in-house quality control testing before delivery.',
     'faq_q4' => 'How can I request a price quote or product catalog?',
     'faq_a4' => 'You can request a quote directly from any product page by clicking "Request Quote", or use our Contact form. For partnership inquiries and distributor catalogs, visit our Collaboration page. Our team typically responds within one business day.',
     'faq_q5' => 'Do you provide after-sales support and warranty?',
-    'faq_a5' => 'Yes. Rozi Tib provides comprehensive after-sales support including 24/7 technical assistance, rapid spare parts supply, and extended warranties on all manufactured devices. We guarantee minimal downtime for all equipment delivered to healthcare facilities.',
+    'faq_a5' => 'Yes. Razi Tebprovides comprehensive after-sales support including 24/7 technical assistance, rapid spare parts supply, and extended warranties on all manufactured devices. We guarantee minimal downtime for all equipment delivered to healthcare facilities.',
 ];
 
 

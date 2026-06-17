@@ -12,7 +12,7 @@
     };
 
     $canonical       = url(request()->path());
-    $pageTitle       = $title ?? ('Rozi Tib - ' . __('messages.slogan'));
+    $pageTitle       = $title ?? ('Razi Teb- ' . __('messages.slogan'));
     $pageDescription = $description ?? __('messages.footer_about_desc');
     $ogImage         = $image ?? asset('logo.png');
 @endphp

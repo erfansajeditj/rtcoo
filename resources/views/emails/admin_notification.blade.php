@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="box">
-        <div class="header">📩 یک پیام جدید در سایت Rozi Tib ثبت شد!</div>
+        <div class="header">📩 یک پیام جدید در سایت Razi Tebثبت شد!</div>
         
 <div class="item"><span class="label">نام فرستنده:</span> <span class="value">{{ $msg->full_name }}</span></div>        <div class="item"><span class="label">ایمیل:</span> <span class="value">{{ $msg->email }}</span></div>
         <div class="item"><span class="label">شماره تماس:</span> <span class="value">{{ $msg->phone ?? 'ثبت نشده' }}</span></div>

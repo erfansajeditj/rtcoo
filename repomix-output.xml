@@ -5030,7 +5030,7 @@ return [
     'about_rozi_tib' => 'About Rozi Tib',
     'about_subtitle' => 'Leading the way in medical devices technology since 2022.',
     'who_we_are' => 'Who We Are',
-    'who_we_are_desc' => 'Rozi Tib is a premier manufacturer and supplier of advanced medical equipment, specializing in high-speed autoclaves and sterilization solutions. Our mission is to enhance patient safety by providing hospitals and clinics with reliable, efficient, and state-of-the-art technology.',
+    'who_we_are_desc' => 'Razi Tebis a premier manufacturer and supplier of advanced medical equipment, specializing in high-speed autoclaves and sterilization solutions. Our mission is to enhance patient safety by providing hospitals and clinics with reliable, efficient, and state-of-the-art technology.',
     'our_vision' => 'Our Vision',
     'our_vision_desc' => 'To be the most trusted name in medical sterilization across the Middle East and beyond, known for our commitment to quality, innovation, and customer service.',
     'years_experience' => 'Years Experience',
@@ -5065,7 +5065,7 @@ return [
     'message' => 'Message',
     'message_placeholder' => 'How can we help?',
     'btn_send_message' => 'Send Message',
-    'hq_title' => 'Rozi Tib HQ',
+    'hq_title' => 'Razi TebHQ',
     'hq_desc' => 'Dushanbe, Tajikistan',
 
 
@@ -5093,7 +5093,7 @@ return [
 
     // کلمات صفحه نمایشگاه‌ها
     'events_exhibitions' => 'Events & Exhibitions',
-    'exhibitions_subtitle' => 'Meet Rozi Tib at international healthcare events.',
+    'exhibitions_subtitle' => 'Meet Razi Tebat international healthcare events.',
     'no_exhibitions_yet' => 'No exhibitions yet',
     'add_exhibitions_admin' => 'Please add exhibitions from the admin panel.',
 
@@ -5509,7 +5509,7 @@ return [
 
     // کلمات صفحه نمایشگاه‌ها
     'events_exhibitions' => 'Мероприятия и выставки',
-    'exhibitions_subtitle' => 'Встречайтесь с Rozi Tib на международных мероприятиях в сфере здравоохранения.',
+    'exhibitions_subtitle' => 'Встречайтесь с Razi Tebна международных мероприятиях в сфере здравоохранения.',
     'no_exhibitions_yet' => 'Пока нет выставок',
     'add_exhibitions_admin' => 'Пожалуйста, добавьте выставки из панели администратора.',
 
@@ -5686,7 +5686,7 @@ return [
 
     // کلمات صفحه نمایشگاه‌ها
     'events_exhibitions' => 'Чорабиниҳо ва Намоишгоҳҳо',
-    'exhibitions_subtitle' => 'Бо Rozi Tib дар чорабиниҳои байналмилалии тандурустӣ шинос шавед.',
+    'exhibitions_subtitle' => 'Бо Razi Tebдар чорабиниҳои байналмилалии тандурустӣ шинос шавед.',
     'no_exhibitions_yet' => 'Ҳоло ягон намоишгоҳ нест',
     'add_exhibitions_admin' => 'Лутфан намоишгоҳҳоро аз панели администратор илова кунед.',
 
@@ -7619,7 +7619,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 </head>
 <body>
     <div class="box">
-        <div class="header">📩 یک پیام جدید در سایت Rozi Tib ثبت شد!</div>
+        <div class="header">📩 یک پیام جدید در سایت Razi Tebثبت شد!</div>
         
 <div class="item"><span class="label">نام فرستنده:</span> <span class="value">{{ $msg->full_name }}</span></div>        <div class="item"><span class="label">ایمیل:</span> <span class="value">{{ $msg->email }}</span></div>
         <div class="item"><span class="label">شماره تماس:</span> <span class="value">{{ $msg->phone ?? 'ثبت نشده' }}</span></div>
@@ -7876,7 +7876,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 <html lang="{{ app()->getLocale() }}" dir="ltr">
 
 <head>
-    @include('partials.head', ['title' => 'Rozi Tib - ' . __('messages.slogan'), 'description' => __('messages.hero_desc')])
+    @include('partials.head', ['title' => 'Razi Teb- ' . __('messages.slogan'), 'description' => __('messages.hero_desc')])
 </head>
 
 <body class="bg-white text-gray-800 flex flex-col min-h-screen">
@@ -8183,7 +8183,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
     };
 
     $canonical       = url(request()->path());
-    $pageTitle       = $title ?? ('Rozi Tib - ' . __('messages.slogan'));
+    $pageTitle       = $title ?? ('Razi Teb- ' . __('messages.slogan'));
     $pageDescription = $description ?? __('messages.footer_about_desc');
     $ogImage         = $image ?? asset('logo.png');
 @endphp
@@ -9678,7 +9678,7 @@ services.json
     };
 
     $canonical       = url(request()->path());
-    $pageTitle       = $title ?? ('Rozi Tib - ' . __('messages.slogan'));
+    $pageTitle       = $title ?? ('Razi Teb- ' . __('messages.slogan'));
     $pageDescription = $description ?? __('messages.footer_about_desc');
     $ogImage         = $image ?? asset('logo.png');
 ?>

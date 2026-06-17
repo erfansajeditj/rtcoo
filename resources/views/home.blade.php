@@ -2,7 +2,7 @@
 <html lang="{{ app()->getLocale() }}" dir="ltr">
 
 <head>
-    @include('partials.head', ['title' => 'Rozi Tib - ' . __('messages.slogan'), 'description' => __('messages.hero_desc')])
+    @include('partials.head', ['title' => 'Razi Teb- ' . __('messages.slogan'), 'description' => __('messages.hero_desc')])
 </head>
 
 <body class="bg-white text-gray-800 flex flex-col min-h-screen">
@@ -295,13 +295,13 @@
         'mainEntity' => [
             [
                 '@type'          => 'Question',
-                'name'           => 'What types of medical equipment does Rozi Tib manufacture?',
-                'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Rozi Tib specializes in high-speed autoclaves, sterilization systems, and advanced medical devices for hospitals, clinics, and healthcare facilities. Our product range includes surgical sterilization units, diagnostic equipment, and critical care devices — all manufactured to IEC 60601-1 and ISO 13485 standards.'],
+                'name'           => 'What types of medical equipment does Razi Tebmanufacture?',
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Razi Tebspecializes in high-speed autoclaves, sterilization systems, and advanced medical devices for hospitals, clinics, and healthcare facilities. Our product range includes surgical sterilization units, diagnostic equipment, and critical care devices — all manufactured to IEC 60601-1 and ISO 13485 standards.'],
             ],
             [
                 '@type'          => 'Question',
                 'name'           => 'Do you export medical equipment internationally?',
-                'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Yes. Rozi Tib is an internationally ready manufacturer based in Dushanbe, Tajikistan. We export our medical equipment across Central Asia, the Middle East, and beyond. Our products meet international certification requirements, making them suitable for use in healthcare facilities worldwide.'],
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Yes. Razi Tebis an internationally ready manufacturer based in Dushanbe, Tajikistan. We export our medical equipment across Central Asia, the Middle East, and beyond. Our products meet international certification requirements, making them suitable for use in healthcare facilities worldwide.'],
             ],
             [
                 '@type'          => 'Question',
@@ -316,7 +316,7 @@
             [
                 '@type'          => 'Question',
                 'name'           => 'Do you provide after-sales support and warranty?',
-                'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Yes. Rozi Tib provides comprehensive after-sales support including 24/7 technical assistance, rapid spare parts supply, and extended warranties on all manufactured devices. We guarantee minimal downtime for all equipment delivered to healthcare facilities.'],
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Yes. Razi Tebprovides comprehensive after-sales support including 24/7 technical assistance, rapid spare parts supply, and extended warranties on all manufactured devices. We guarantee minimal downtime for all equipment delivered to healthcare facilities.'],
             ],
         ],
     ];
@@ -324,7 +324,7 @@
     $webpageSchema = [
         '@context'    => 'https://schema.org',
         '@type'       => 'WebPage',
-        'name'        => 'Rozi Tib - Medical Technologies',
+        'name'        => 'Razi Teb- Medical Technologies',
         'description' => __('messages.hero_desc'),
         'url'         => url()->current(),
         'inLanguage'  => app()->getLocale(),

@@ -92,7 +92,7 @@ class CollaborationResource extends Resource
                     ->form([
                         TextInput::make('subject')
                             ->label('موضوع ایمیل')
-                            ->default('پاسخ به درخواست همکاری شما - Rozi Tib')
+                            ->default('پاسخ به درخواست همکاری شما - Razi Teb')
                             ->required(),
                             
                         Textarea::make('message')
