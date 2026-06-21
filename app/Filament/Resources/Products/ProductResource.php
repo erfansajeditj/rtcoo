@@ -45,6 +45,7 @@ class ProductResource extends Resource
 
                     FileUpload::make('gallery')
                         ->label('گالری تصاویر')
+                        ->disk('public')
                         ->directory('products/gallery')
                         ->multiple()
                         ->reorderable()
