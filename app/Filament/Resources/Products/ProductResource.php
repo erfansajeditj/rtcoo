@@ -32,9 +32,6 @@ class ProductResource extends Resource
             // بخش ۱: اطلاعات عمومی (عکس‌ها و فایل‌ها)
             Section::make('General Information')
                 ->schema([
-                    TextInput::make('category')
-                        ->required(),
-                        
                     TextInput::make('youtube_video_id')
                         ->label('شناسه ویدیوی یوتیوب (اختیاری)')
                         ->helperText('مثال: ABCDEFG1234')
@@ -74,6 +71,7 @@ class ProductResource extends Resource
                             Tab::make('🇺🇸 English')
                                 ->schema([
                                     TextInput::make('name.en')->label('Product Name')->required(),
+                                    TextInput::make('category.en')->label('Category')->required(),
                                     TextInput::make('slug.en')->label('Slug / URL')->required(),
                                     Textarea::make('description.en')->label('Description')->rows(3),
                                     Textarea::make('specs.en')
@@ -86,6 +84,7 @@ class ProductResource extends Resource
                             Tab::make('🇹🇯 Тоҷикӣ')
                                 ->schema([
                                     TextInput::make('name.tg')->label('Номи Маҳсулот')->required(),
+                                    TextInput::make('category.tg')->label('Категория')->required(),
                                     TextInput::make('slug.tg')->label('Slug (Тоҷикӣ)')->required(),
                                     Textarea::make('description.tg')->label('Тавсиф')->rows(3),
                                     Textarea::make('specs.tg')
@@ -98,6 +97,7 @@ class ProductResource extends Resource
                             Tab::make('🇷🇺 Русский')
                                 ->schema([
                                     TextInput::make('name.ru')->label('Название продукта')->required(),
+                                    TextInput::make('category.ru')->label('Категория')->required(),
                                     TextInput::make('slug.ru')->label('Slug (Русский)')->required(),
                                     Textarea::make('description.ru')->label('Описание')->rows(3),
                                     Textarea::make('specs.ru')
