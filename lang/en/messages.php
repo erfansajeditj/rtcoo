@@ -11,7 +11,7 @@ return [
 
 
     // کلمات صفحه اصلی (Home)
-    'innovating_healthcare' => 'Innovating Healthcare',
+    'innovating_healthcare' => 'Medical Technology Manufacturer · Dushanbe, Tajikistan',
     'future_of' => 'The Future of',
     'medical_equipment' => 'Medical Equipment',
     'hero_desc' => 'Advanced medical manufacturing meets digital innovation. Empowering healthcare professionals with reliable, high-tech, and accessible equipment worldwide.',
@@ -120,14 +120,14 @@ return [
 
     
 'why_choose_us' => 'Why Choose Us',
-    'feature_hightech_title' => 'High-Tech & Economical',
-    'feature_hightech_desc' => 'Manufacturing state-of-the-art medical equipment at highly competitive prices.',
-    'feature_delivery_title' => 'On-Time Delivery',
-    'feature_delivery_desc' => 'Fast and reliable supply chain ensuring your equipment arrives exactly when needed.',
-    'feature_warranty_title' => 'Reliable Warranty',
-    'feature_warranty_desc' => 'Comprehensive and extended guarantee on all our manufactured devices.',
-    'feature_support_title' => '24/7 After-Sales Support',
-    'feature_support_desc' => 'Exceptional technical support and maintenance services whenever you need them.',
+    'feature_hightech_title' => 'IEC & ISO Certified',
+    'feature_hightech_desc' => 'Every device meets IEC 60601-1 and ISO 13485 standards — the same benchmarks required by hospitals globally.',
+    'feature_delivery_title' => 'Central Asia Distribution',
+    'feature_delivery_desc' => 'Based in Dushanbe, we supply hospitals and clinics across Tajikistan, the CIS region, and the Middle East.',
+    'feature_warranty_title' => 'Warranty on Every Device',
+    'feature_warranty_desc' => 'All products come with a warranty backed by our in-house engineering team for rapid, expert resolution.',
+    'feature_support_title' => '24/7 Technical Support',
+    'feature_support_desc' => 'Our engineers are available around the clock for remote troubleshooting and on-site assistance.',
 
 
     'footer_about_desc' => 'We are dedicated to manufacturing advanced, high-quality medical equipment to improve global healthcare standards.',
@@ -158,8 +158,8 @@ return [
     'timeline_2024_title' => 'R&D and Innovation Expansion',
     'timeline_2024_desc' => 'A major leap forward. We significantly expanded our capabilities by launching a dedicated Research & Development division. This milestone allowed us to integrate advanced engineering and smart technologies into our growing operations.',
     
-    'timeline_2026_title' => 'Shaping the Future',
-    'timeline_2026_desc' => 'Today, we stand as a trusted partner for medical professionals. We are continuously scaling our production capabilities and pushing the boundaries of modern healthcare technology worldwide.',
+    'timeline_2026_title' => 'Growing on the World Stage',
+    'timeline_2026_desc' => 'Today, Razi Teb is a trusted partner for hospitals and clinics across Central Asia and the Middle East. We are actively scaling production, expanding our distribution network, and delivering certified medical equipment to new markets worldwide.',
 
     'rd_and_manufacturing' => 'R&D & Manufacturing',
     'rd_title' => 'Powered by <span class="text-brand-orange">In-House</span> Innovation',

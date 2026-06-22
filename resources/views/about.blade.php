@@ -92,7 +92,7 @@
                         <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                     </div>
                     <div class="bg-gradient-to-br from-brand-teal/5 to-transparent p-8 rounded-2xl border border-brand-teal/20 shadow-sm group-hover:shadow-lg transition-all duration-300">
-                        <span class="text-brand-orange font-bold text-2xl block mb-2">2026 & Beyond</span>
+                        <span class="text-brand-orange font-bold text-2xl block mb-2">2026 — Present</span>
                         <h3 class="text-xl font-bold text-slate-800 mb-3">{{ __('messages.timeline_2026_title') }}</h3>
                         <p class="text-slate-600 leading-relaxed">{{ __('messages.timeline_2026_desc') }}</p>
                     </div>
