@@ -185,7 +185,7 @@
                                 })
                                 ->implode("\n");
                         @endphp
-                        <div class="text-gray-700 whitespace-pre-line leading-loose text-base font-sans relative z-10">{!! sanitize_html($specsFormatted) !!}</div>
+                        <div class="text-gray-900 whitespace-pre-line leading-loose text-base font-sans relative z-10">{!! sanitize_html($specsFormatted) !!}</div>
                     </div>
                     @endif
 
