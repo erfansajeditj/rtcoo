@@ -4,6 +4,9 @@ return [
     'about' => 'About Us',
     'products' => 'Products',
     'exhibitions' => 'Exhibitions',
+    'news'        => 'News',
+    'articles'    => 'Articles',
+    'media'       => 'Media',
     'collaboration' => 'Collaboration',
     'contact' => 'Contact',
     'login' => 'Login',
@@ -107,6 +110,14 @@ return [
     'proposal_placeholder' => 'Tell us about your company and experience...',
     'submit_application' => 'Submit Application',
 
+
+    // News & Articles
+    'news_subtitle'     => 'Latest news from Razi Teb.',
+    'articles_subtitle' => 'In-depth articles on medical technology.',
+    'read_more'         => 'Read More',
+    'back_to'           => 'Back to',
+    'no_posts_yet'      => 'Nothing here yet',
+    'add_posts_admin'   => 'Posts will appear here once published from the admin panel.',
 
     // کلمات صفحه نمایشگاه‌ها
     'events_exhibitions' => 'Events & Exhibitions',

@@ -41,10 +41,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                {{ __('messages.products') }}
             </a>
 
-            <a href="{{ route('exhibitions') }}"
-               class="pb-1 transition hover:-translate-y-0.5 transform {{ request()->routeIs('exhibitions') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold' }}">
-               {{ __('messages.exhibitions') }}
-            </a>
+            {{-- Media Dropdown --}}
+            <div class="relative" x-data="{ mediaOpen: false }" @mouseenter="mediaOpen = true" @mouseleave="mediaOpen = false">
+                <button @click="mediaOpen = !mediaOpen"
+                        class="pb-1 transition hover:-translate-y-0.5 transform flex items-center gap-1 {{ request()->routeIs('exhibitions') || request()->routeIs('news.*') || request()->routeIs('articles.*') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold' }}">
+                    Media
+                    <svg class="w-3 h-3 transition-transform duration-200" :class="mediaOpen ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+
+                <div x-show="mediaOpen"
+                     x-transition:enter="transition ease-out duration-150"
+                     x-transition:enter-start="opacity-0 translate-y-1"
+                     x-transition:enter-end="opacity-100 translate-y-0"
+                     x-transition:leave="transition ease-in duration-100"
+                     x-transition:leave-start="opacity-100 translate-y-0"
+                     x-transition:leave-end="opacity-0 translate-y-1"
+                     class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-48 bg-white rounded-2xl shadow-xl border border-gray-100 py-2 z-50">
+
+                    <a href="{{ route('exhibitions') }}"
+                       class="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold hover:bg-gray-50 transition-colors {{ request()->routeIs('exhibitions') ? 'text-brand-teal' : 'text-gray-700 hover:text-brand-teal' }}">
+                        <span class="w-7 h-7 bg-teal-50 rounded-lg flex items-center justify-center text-brand-teal text-base">🏛️</span>
+                        {{ __('messages.exhibitions') }}
+                    </a>
+
+                    <a href="{{ route('news.index') }}"
+                       class="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold hover:bg-gray-50 transition-colors {{ request()->routeIs('news.*') ? 'text-brand-teal' : 'text-gray-700 hover:text-brand-teal' }}">
+                        <span class="w-7 h-7 bg-teal-50 rounded-lg flex items-center justify-center text-brand-teal text-base">📰</span>
+                        {{ __('messages.news') }}
+                    </a>
+
+                    <a href="{{ route('articles.index') }}"
+                       class="flex items-center gap-3 px-4 py-2.5 text-sm font-semibold hover:bg-gray-50 transition-colors {{ request()->routeIs('articles.*') ? 'text-brand-orange' : 'text-gray-700 hover:text-brand-orange' }}">
+                        <span class="w-7 h-7 bg-orange-50 rounded-lg flex items-center justify-center text-brand-orange text-base">📝</span>
+                        {{ __('messages.articles') }}
+                    </a>
+                </div>
+            </div>
 
           <a href="{{ route('collaboration.show') }}"
                class="pb-1 transition hover:-translate-y-0.5 transform {{ request()->routeIs('collaboration.show') ? 'text-brand-teal font-bold border-b-2 border-orange-500' : 'text-sm text-gray-700 hover:text-brand-teal font-bold' }}">
@@ -116,9 +150,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                class="px-3 py-3 rounded-lg font-semibold text-sm {{ request()->routeIs('products.index') || request()->routeIs('products.show') || request()->routeIs('products.category') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50' }} transition">
                 {{ __('messages.products') }}
             </a>
+            {{-- Media section in mobile --}}
+            <div class="px-3 pt-2 pb-1">
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Media</span>
+            </div>
             <a href="{{ route('exhibitions') }}" @click="open = false"
-               class="px-3 py-3 rounded-lg font-semibold text-sm {{ request()->routeIs('exhibitions') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50' }} transition">
-                {{ __('messages.exhibitions') }}
+               class="px-5 py-2.5 rounded-lg font-semibold text-sm {{ request()->routeIs('exhibitions') ? 'text-brand-teal bg-teal-50' : 'text-gray-600 hover:text-brand-teal hover:bg-gray-50' }} transition flex items-center gap-2">
+                🏛️ {{ __('messages.exhibitions') }}
+            </a>
+            <a href="{{ route('news.index') }}" @click="open = false"
+               class="px-5 py-2.5 rounded-lg font-semibold text-sm {{ request()->routeIs('news.*') ? 'text-brand-teal bg-teal-50' : 'text-gray-600 hover:text-brand-teal hover:bg-gray-50' }} transition flex items-center gap-2">
+                📰 {{ __('messages.news') }}
+            </a>
+            <a href="{{ route('articles.index') }}" @click="open = false"
+               class="px-5 py-2.5 rounded-lg font-semibold text-sm {{ request()->routeIs('articles.*') ? 'text-brand-orange bg-orange-50' : 'text-gray-600 hover:text-brand-orange hover:bg-orange-50' }} transition flex items-center gap-2">
+                📝 {{ __('messages.articles') }}
             </a>
             <a href="{{ route('collaboration.show') }}" @click="open = false"
                class="px-3 py-3 rounded-lg font-semibold text-sm {{ request()->routeIs('collaboration.show') ? 'text-brand-teal bg-teal-50' : 'text-gray-700 hover:text-brand-teal hover:bg-gray-50' }} transition">

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CollaborationController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\AdminDashboardController;
 use App\Models\Exhibition;
 
@@ -54,6 +55,12 @@ Route::prefix('{locale}')
                 ->orderBy('created_at', 'desc')->get();
             return view('exhibitions', compact('exhibitions'));
         })->name('exhibitions');
+
+        // اخبار و مقالات
+        Route::get('/news', [PostController::class, 'newsIndex'])->name('news.index');
+        Route::get('/articles', [PostController::class, 'articlesIndex'])->name('articles.index');
+        Route::get('/news/{slug}', [PostController::class, 'showNews'])->name('news.show');
+        Route::get('/articles/{slug}', [PostController::class, 'showArticle'])->name('articles.show');
 
         // صفحات ثابت
         Route::get('/about', fn () => view('about'))->name('about');
