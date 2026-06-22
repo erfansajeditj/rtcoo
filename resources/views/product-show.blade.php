@@ -174,7 +174,18 @@
                             <span class="w-8 h-8 bg-white text-brand-orange rounded-full flex items-center justify-center mr-3 shadow-sm text-sm border border-orange-100">⚙️</span>
                             {{ __('messages.technical_specs') }}
                         </h3>
-                        <div class="text-gray-700 whitespace-pre-line leading-loose text-base font-sans relative z-10">{!! sanitize_html($product->specs) !!}</div>
+                        @php
+                            $specsFormatted = collect(explode("\n", $product->specs ?? ''))
+                                ->map(function($line) {
+                                    $trimmed = rtrim($line);
+                                    if (str_ends_with($trimmed, ':') && trim($trimmed) !== '') {
+                                        return '<strong>' . htmlspecialchars($trimmed, ENT_QUOTES, 'UTF-8') . '</strong>';
+                                    }
+                                    return htmlspecialchars($line, ENT_QUOTES, 'UTF-8');
+                                })
+                                ->implode("\n");
+                        @endphp
+                        <div class="text-gray-700 whitespace-pre-line leading-loose text-base font-sans relative z-10">{!! sanitize_html($specsFormatted) !!}</div>
                     </div>
                     @endif
 
