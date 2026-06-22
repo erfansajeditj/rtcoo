@@ -9,16 +9,10 @@
    @include('partials.navbar')
 
 <header class="relative overflow-hidden py-36 md:py-80 bg-cover bg-center md:bg-[center_top_-5rem]" style="background-image: url('{{ asset('images/headers/products-bg.webp') }}');">
-    <div class="absolute inset-0 bg-gradient-to-b from-black/65 via-black/55 to-black/30 z-0"></div>
-    <div class="absolute top-0 right-0 opacity-10 transform translate-x-1/3 -translate-y-1/3 z-0">
-         <svg width="400" height="400" fill="currentColor" class="text-white" viewBox="0 0 200 200"><path d="M45,-76C58,-69,68,-59,76,-48C84,-36,90,-23,89,-10C88,3,80,16,71,27C62,38,52,48,41,56C30,64,18,71,5,72C-8,73,-19,68,-30,61C-41,54,-52,45,-61,34C-70,23,-77,10,-76,-3C-75,-16,-66,-28,-56,-38C-46,-48,-35,-56,-23,-63C-11,-70,1,-76,14,-78L45,-76Z" transform="translate(100 100)" /></svg>
-    </div>
-
-
-
+    <div class="absolute inset-0 z-0" style="background:linear-gradient(to bottom,rgba(0,0,0,.60),rgba(0,0,0,.50),rgba(0,0,0,.25));"></div>
     <div class="container mx-auto px-6 text-center relative z-10 -mt-20">
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 text-white [text-shadow:0_2px_20px_rgba(0,0,0,0.9)]">{{ __('messages.products') }}</h1>
-        <p class="text-white/85 text-lg [text-shadow:0_1px_10px_rgba(0,0,0,0.7)]">{{ __('messages.products_subtitle') }}</p>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 text-white" style="text-shadow:0 2px 20px rgba(0,0,0,.9);">{{ __('messages.products') }}</h1>
+        <p class="text-white text-lg" style="opacity:.9;text-shadow:0 1px 10px rgba(0,0,0,.7);">{{ __('messages.products_subtitle') }}</p>
     </div>
 </header>
 

@@ -9,10 +9,10 @@
    @include('partials.navbar')
 
 <header class="relative overflow-hidden py-28 md:py-80 bg-cover bg-center md:bg-[center_top_-5rem]" style="background-image: url('{{ asset('images/headers/exhibitions-bg.webp') }}');">
-    <div class="absolute inset-0 bg-gradient-to-b from-black/65 via-black/55 to-black/30 z-0"></div>
+    <div class="absolute inset-0 z-0" style="background:linear-gradient(to bottom,rgba(0,0,0,.60),rgba(0,0,0,.50),rgba(0,0,0,.25));"></div>
     <div class="container mx-auto px-6 text-center relative z-10 -mt-20">
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 text-white [text-shadow:0_2px_20px_rgba(0,0,0,0.9)]">{{ __('messages.events_exhibitions') }}</h1>
-        <p class="text-white/85 text-lg [text-shadow:0_1px_10px_rgba(0,0,0,0.7)]">{{ __('messages.exhibitions_subtitle') }}</p>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 text-white" style="text-shadow:0 2px 20px rgba(0,0,0,.9);">{{ __('messages.events_exhibitions') }}</h1>
+        <p class="text-white text-lg" style="opacity:.9;text-shadow:0 1px 10px rgba(0,0,0,.7);">{{ __('messages.exhibitions_subtitle') }}</p>
         </div>
     </header>
 

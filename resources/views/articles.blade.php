@@ -19,8 +19,8 @@
     </div>
     <div class="container mx-auto px-6 text-center relative z-10">
         <span class="inline-block bg-white/20 text-white text-xs font-bold px-4 py-1.5 rounded-full mb-5 uppercase tracking-widest border border-white/30">Media</span>
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 text-white [text-shadow:0_2px_20px_rgba(0,0,0,0.5)]">{{ __('messages.articles') }}</h1>
-        <p class="text-white/85 text-lg">{{ __('messages.articles_subtitle') }}</p>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 text-white" style="text-shadow:0 2px 20px rgba(0,0,0,.5);">{{ __('messages.articles') }}</h1>
+        <p class="text-orange-100 text-lg">{{ __('messages.articles_subtitle') }}</p>
     </div>
 </header>
 
