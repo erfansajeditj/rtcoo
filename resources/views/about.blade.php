@@ -18,7 +18,7 @@
         </div>
     </header>
 
-    <div class="container mx-auto px-6 py-20 max-w-7xl flex-grow">
+    <div id="main-content" class="container mx-auto px-6 py-20 max-w-7xl flex-grow">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
                 <span class="text-brand-orange font-bold tracking-widest uppercase text-sm mb-3 block">
@@ -69,7 +69,7 @@
             </div>
 
             <div class="relative border-l-4 border-brand-teal/20 rtl:border-l-0 rtl:border-r-4 ml-6 rtl:ml-0 rtl:mr-6 space-y-12 pb-4">
-                <div class="relative pl-10 rtl:pl-0 rtl:pr-10 group">
+                <div data-aos="fade-right" class="relative pl-10 rtl:pl-0 rtl:pr-10 group">
                     <div class="absolute w-6 h-6 bg-white border-4 border-brand-teal rounded-full -left-[15px] rtl:left-auto rtl:-right-[15px] top-1 group-hover:bg-brand-teal transition-colors duration-300"></div>
                     <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm group-hover:shadow-md group-hover:border-brand-teal/30 transition-all duration-300">
                         <span class="text-brand-orange font-bold text-2xl block mb-2">2022</span>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
 
-                <div class="relative pl-10 rtl:pl-0 rtl:pr-10 group">
+                <div data-aos="fade-right" data-aos-delay="150" class="relative pl-10 rtl:pl-0 rtl:pr-10 group">
                     <div class="absolute w-6 h-6 bg-white border-4 border-brand-orange rounded-full -left-[15px] rtl:left-auto rtl:-right-[15px] top-1 group-hover:bg-brand-orange transition-colors duration-300"></div>
                     <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm group-hover:shadow-md group-hover:border-brand-orange/30 transition-all duration-300">
                         <span class="text-brand-teal font-bold text-2xl block mb-2">2024</span>
@@ -87,7 +87,7 @@
                     </div>
                 </div>
 
-                <div class="relative pl-10 rtl:pl-0 rtl:pr-10 group">
+                <div data-aos="fade-right" data-aos-delay="300" class="relative pl-10 rtl:pl-0 rtl:pr-10 group">
                     <div class="absolute w-8 h-8 bg-brand-teal border-4 border-white rounded-full -left-[19px] rtl:left-auto rtl:-right-[19px] top-0 shadow-md flex items-center justify-center">
                         <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                     </div>

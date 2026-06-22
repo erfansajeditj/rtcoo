@@ -57,7 +57,7 @@
                     <h3 class="text-2xl font-bold text-gray-900 mb-6 pl-3 border-l-4 border-brand-teal">{{ __('messages.headquarters') }}</h3>
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-gray-100 text-gray-600 rounded-full flex items-center justify-center text-xl flex-shrink-0">📍</div>
+                            <div class="w-12 h-12 bg-gray-100 text-gray-600 rounded-full flex items-center justify-center text-xl flex-shrink-0" aria-hidden="true">📍</div>
                             <div>
                                 <h4 class="font-bold text-gray-900">{{ __('messages.address') }}</h4>
                                 <p class="text-gray-600">{!! __('messages.address_text') !!}</p>
@@ -65,7 +65,7 @@
                         </div>
 
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-gray-100 text-gray-600 rounded-full flex items-center justify-center text-xl flex-shrink-0">📞</div>
+                            <div class="w-12 h-12 bg-gray-100 text-gray-600 rounded-full flex items-center justify-center text-xl flex-shrink-0" aria-hidden="true">📞</div>
                             <div>
                                 <h4 class="font-bold text-gray-900">{{ __('messages.phone') }}</h4>
                                 <p class="text-gray-600 font-mono">+992 93 110 2730</p>
@@ -74,7 +74,7 @@
                         </div>
 
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-gray-100 text-gray-600 rounded-full flex items-center justify-center text-xl flex-shrink-0">⏰</div>
+                            <div class="w-12 h-12 bg-gray-100 text-gray-600 rounded-full flex items-center justify-center text-xl flex-shrink-0" aria-hidden="true">⏰</div>
                             <div>
                                 <h4 class="font-bold text-gray-900">{{ __('messages.working_hours') }}</h4>
                                 <p class="text-gray-600">{{ __('messages.working_hours_text_1') }}</p>
@@ -131,30 +131,30 @@
 
 
     <div>
-        <label class="block text-sm font-medium text-gray-700 mb-2">{{ __('messages.full_name') }}</label>
-        <input type="text" name="full_name" required 
-               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-transparent outline-none transition" 
+        <label for="full_name" class="block text-sm font-medium text-gray-700 mb-2">{{ __('messages.full_name') }}</label>
+        <input type="text" id="full_name" name="full_name" required autocomplete="name"
+               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-transparent outline-none transition"
                placeholder="John Doe">
     </div>
 
     <div>
-        <label class="block text-sm font-medium text-gray-700 mb-2">{{ __('messages.email_address') }}</label>
-        <input type="email" name="email" 
-               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-transparent outline-none transition" 
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">{{ __('messages.email_address') }}</label>
+        <input type="email" id="email" name="email" autocomplete="email"
+               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-transparent outline-none transition"
                placeholder="name@company.com">
     </div>
 
     <div>
-        <label class="block text-sm font-medium text-gray-700 mb-2">{{ __('messages.phone_number') }}</label>
-        <input type="text" name="phone" 
+        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">{{ __('messages.phone_number') }}</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel"
                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal outline-none bg-white transition"
                placeholder="+992 ...">
     </div>
 
     <div>
-        <label class="block text-sm font-medium text-gray-700 mb-2">{{ __('messages.subject') }}</label>
+        <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">{{ __('messages.subject') }}</label>
         <div class="relative">
-            <select name="subject" x-model="subject" required 
+            <select id="subject" name="subject" x-model="subject" required
                     class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-transparent outline-none transition appearance-none bg-white">
                 <option value="" disabled selected>{{ __('messages.select_topic') }}</option>
                 <option value="Product Inquiry">{{ __('messages.topic_product') }}</option>
@@ -196,9 +196,9 @@
     </template>
 
     <div>
-        <label class="block text-sm font-medium text-gray-700 mb-2">{{ __('messages.message') }}</label>
-        <textarea name="content" rows="4" required 
-                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-transparent outline-none transition" 
+        <label for="content" class="block text-sm font-medium text-gray-700 mb-2">{{ __('messages.message') }}</label>
+        <textarea id="content" name="content" rows="4" required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-teal focus:border-transparent outline-none transition"
                   placeholder="{{ __('messages.message_placeholder') }}"></textarea>
     </div>
 

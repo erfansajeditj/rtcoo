@@ -1,3 +1,4 @@
+<a href="#main-content" class="sr-only focus:not-sr-only">Skip to content</a>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ3CJZ2H"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -83,9 +84,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 class="lg:hidden flex flex-col justify-center items-center w-9 h-9 rounded-lg hover:bg-gray-100 transition"
                 aria-label="Toggle menu"
             >
-                <span class="block w-5 h-0.5 bg-gray-700 transition-all duration-300" :class="open ? 'rotate-45 translate-y-1.5' : ''"></span>
-                <span class="block w-5 h-0.5 bg-gray-700 my-1 transition-all duration-300" :class="open ? 'opacity-0' : ''"></span>
-                <span class="block w-5 h-0.5 bg-gray-700 transition-all duration-300" :class="open ? '-rotate-45 -translate-y-1.5' : ''"></span>
+                <span aria-hidden="true" class="block w-5 h-0.5 bg-gray-700 transition-all duration-300" :class="open ? 'rotate-45 translate-y-1.5' : ''"></span>
+                <span aria-hidden="true" class="block w-5 h-0.5 bg-gray-700 my-1 transition-all duration-300" :class="open ? 'opacity-0' : ''"></span>
+                <span aria-hidden="true" class="block w-5 h-0.5 bg-gray-700 transition-all duration-300" :class="open ? '-rotate-45 -translate-y-1.5' : ''"></span>
             </button>
         </div>
     </div>

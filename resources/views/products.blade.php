@@ -77,7 +77,7 @@
 
 
 
-    <div class="container mx-auto px-6 py-12 flex-grow">
+    <div id="main-content" class="container mx-auto px-6 py-12 flex-grow">
         
         {{-- حلقه اول: چرخیدن روی دسته‌بندی‌ها --}}
         @foreach($products as $categoryName => $categoryItems)
@@ -98,10 +98,10 @@
                 
                 {{-- حلقه دوم: چرخیدن روی محصولات همون دسته --}}
                 @foreach($categoryItems as $product)
-                <div class="bg-white rounded-xl shadow-sm transition-all duration-500 border border-gray-100 hover:shadow-2xl hover:shadow-brand-orange/30 hover:-translate-y-1.5 group flex flex-col">
+                <div data-aos="fade-up" class="bg-white rounded-xl shadow-sm transition-all duration-500 border border-gray-100 hover:shadow-2xl hover:shadow-brand-orange/30 hover:-translate-y-1.5 group flex flex-col">
                     <div class="h-40 sm:h-52 md:h-64 overflow-hidden rounded-t-xl bg-white relative flex items-center justify-center p-4 border-b border-gray-50">
                         @if($product->image)
-                            <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
+                            <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" loading="lazy" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
                         @else
                             <span class="text-gray-400">{{ __('messages.no_image') }}</span>
                         @endif

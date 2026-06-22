@@ -37,10 +37,10 @@
             </p>
             
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-<a href="{{ route('products.index') }}" class="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-brand-teal text-white font-bold rounded-full hover:bg-teal-600 transition shadow-lg hover:shadow-teal-500/30 transform hover:scale-105">
+<a href="{{ route('products.index') }}" class="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-brand-teal text-white font-bold rounded-full hover:bg-teal-600 active:scale-95 transition shadow-lg hover:shadow-teal-500/30 transform hover:scale-105">
                         {{ __('messages.view_products') }}
                 </a>
-<a href="{{ route('contact.show') }}" class="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-gray-900 transition shadow-lg transform hover:scale-105">
+<a href="{{ route('contact.show') }}" class="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-gray-900 active:scale-95 transition shadow-lg transform hover:scale-105">
                         {{ __('messages.contact_us') }}
                 </a>
             </div>
@@ -54,7 +54,7 @@
 <!-- ========================================== -->
 <!-- 1. بخش ویژگی‌ها و مزایای رقابتی (چرا ما؟) -->
 <!-- ========================================== -->
-<div class="bg-gray-50/50 py-16 border-b border-gray-100">
+<div id="main-content" class="bg-gray-50/50 py-16 border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center mb-12">
@@ -63,10 +63,9 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            
+
             <!-- کارت 1 -->
-            <!-- با رفتن موس روی کارت، حاشیه نارنجی میشه -->
-            <div class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-orange-400 transition-all duration-300 transform hover:-translate-y-1 text-center">
+            <div data-aos="fade-up" data-aos-delay="0" class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-orange-400 transition-all duration-300 transform hover:-translate-y-1 text-center">
                 <!-- آیکون: در حالت عادی آبی‌سبز، با هاور نارنجی میشه -->
                 <div class="w-16 h-16 mx-auto bg-teal-50 group-hover:bg-orange-50 rounded-2xl flex items-center justify-center mb-5 text-teal-600 group-hover:text-orange-500 transition-colors duration-300">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,7 +77,7 @@
             </div>
 
             <!-- کارت 2 -->
-            <div class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-orange-400 transition-all duration-300 transform hover:-translate-y-1 text-center">
+            <div data-aos="fade-up" data-aos-delay="100" class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-orange-400 transition-all duration-300 transform hover:-translate-y-1 text-center">
                 <div class="w-16 h-16 mx-auto bg-teal-50 group-hover:bg-orange-50 rounded-2xl flex items-center justify-center mb-5 text-teal-600 group-hover:text-orange-500 transition-colors duration-300">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -89,7 +88,7 @@
             </div>
 
             <!-- کارت 3 -->
-            <div class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-orange-400 transition-all duration-300 transform hover:-translate-y-1 text-center">
+            <div data-aos="fade-up" data-aos-delay="200" class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-orange-400 transition-all duration-300 transform hover:-translate-y-1 text-center">
                 <div class="w-16 h-16 mx-auto bg-teal-50 group-hover:bg-orange-50 rounded-2xl flex items-center justify-center mb-5 text-teal-600 group-hover:text-orange-500 transition-colors duration-300">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
@@ -100,7 +99,7 @@
             </div>
 
             <!-- کارت 4 -->
-            <div class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-orange-400 transition-all duration-300 transform hover:-translate-y-1 text-center">
+            <div data-aos="fade-up" data-aos-delay="300" class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-orange-400 transition-all duration-300 transform hover:-translate-y-1 text-center">
                 <div class="w-16 h-16 mx-auto bg-teal-50 group-hover:bg-orange-50 rounded-2xl flex items-center justify-center mb-5 text-teal-600 group-hover:text-orange-500 transition-colors duration-300">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>

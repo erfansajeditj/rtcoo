@@ -99,12 +99,12 @@
 <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 mb-3 h-64 sm:h-80 lg:h-[400px] flex flex-col items-center justify-center relative overflow-hidden group/main">
                                     <img :src="images[currentIndex]" alt="{{ $product->name }}" class="max-w-full max-h-full object-contain drop-shadow-lg transition-opacity duration-500 ease-in-out">
                                     
-                                    <button @click="prev()" 
+                                    <button @click="prev()" aria-label="Previous image"
                                             class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/70 backdrop-blur-sm text-gray-700 rounded-full flex items-center justify-center shadow-lg border border-gray-100 hover:bg-brand-teal hover:text-white transition-all duration-300 opacity-0 group-hover/main:opacity-100 z-20 rtl:right-4 rtl:left-auto">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                                     </button>
-                                    
-                                    <button @click="next()" 
+
+                                    <button @click="next()" aria-label="Next image"
                                             class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/70 backdrop-blur-sm text-gray-700 rounded-full flex items-center justify-center shadow-lg border border-gray-100 hover:bg-brand-teal hover:text-white transition-all duration-300 opacity-0 group-hover/main:opacity-100 z-20 rtl:left-4 rtl:right-auto">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                                     </button>
