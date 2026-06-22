@@ -78,7 +78,8 @@ class ProductResource extends Resource
                                     Textarea::make('description.en')->label('Description')->rows(3),
                                     Textarea::make('specs.en')
                                         ->label('Technical Specifications')
-                                        ->rows(4)
+                                        ->helperText('Use "SECTION TITLE:" on its own line for bold headers. Use "• item" for bullet points.')
+                                        ->rows(6)
                                         ->columnSpanFull(),
                                 ]),
                             
@@ -91,7 +92,8 @@ class ProductResource extends Resource
                                     Textarea::make('description.tg')->label('Тавсиф')->rows(3),
                                     Textarea::make('specs.tg')
                                         ->label('Хусусиятҳои техникӣ (Specs)')
-                                        ->rows(4)
+                                        ->helperText('Барои унвонҳои ғафс: "УНВОН:" дар хати алоҳида. Барои рӯйхат: "• банд"')
+                                        ->rows(6)
                                         ->columnSpanFull(),
                                 ]),
                                 
@@ -104,7 +106,8 @@ class ProductResource extends Resource
                                     Textarea::make('description.ru')->label('Описание')->rows(3),
                                     Textarea::make('specs.ru')
                                         ->label('Технические характеристики (Specs)')
-                                        ->rows(4)
+                                        ->helperText('Для заголовков: "ЗАГОЛОВОК:" на отдельной строке. Для списка: "• пункт"')
+                                        ->rows(6)
                                         ->columnSpanFull(),
                                 ]),
                         ])

@@ -151,7 +151,7 @@
                     <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight relative z-10">{{ $product->name }}</h1>
                     
                     <div class="prose text-gray-600 mb-8 border-b border-gray-100 pb-8">
-                        <h3 class="text-lg font-bold text-teal-700 mb-2 flex items-center gap-2">{{ __('messages.product_overview') }}</h3>
+                        <h2 class="text-lg font-bold text-teal-700 mb-2 flex items-center gap-2">{{ __('messages.product_overview') }}</h2>
                         {!! sanitize_html($product->description) !!}
                     </div>
 
@@ -170,10 +170,10 @@
                     @if($product->specs)
                     <div class="mb-8 bg-brand-warm p-6 rounded-2xl border border-orange-100 relative overflow-hidden group hover:border-orange-200 transition">
                         <div class="absolute top-0 right-0 w-16 h-16 bg-orange-100 rounded-bl-full -mr-8 -mt-8 opacity-50"></div>
-                        <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center relative z-10">
+                        <h2 class="text-lg font-bold text-gray-800 mb-4 flex items-center relative z-10">
                             <span class="w-8 h-8 bg-white text-brand-orange rounded-full flex items-center justify-center mr-3 shadow-sm text-sm border border-orange-100">⚙️</span>
                             {{ __('messages.technical_specs') }}
-                        </h3>
+                        </h2>
                         @php
                             $specsFormatted = collect(explode("\n", $product->specs ?? ''))
                                 ->map(function($line) {
