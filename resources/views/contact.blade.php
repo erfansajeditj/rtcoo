@@ -17,7 +17,7 @@
    @include('partials.navbar')
 
   <header class="relative overflow-hidden py-28 md:py-80 bg-cover bg-center" style="background-image: url('{{ asset('images/headers/contact-bg.webp') }}');">
-    <div class="absolute inset-0 z-0" style="background:linear-gradient(to bottom,rgba(0,0,0,.60),rgba(0,0,0,.50),rgba(0,0,0,.25));"></div>
+    <div class="absolute inset-0 z-0" style="background:linear-gradient(to bottom,rgba(0,0,0,.50),rgba(0,0,0,.40),rgba(0,0,0,.15));"></div>
     <div class="container mx-auto px-6 text-center relative z-10 -mt-20">
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 text-white" style="text-shadow:0 2px 20px rgba(0,0,0,.9);">{{ __('messages.get_in_touch') }}</h1>
             <p class="text-white text-lg max-w-xl mx-auto" style="opacity:.9;text-shadow:0 1px 10px rgba(0,0,0,.7);">{{ __('messages.contact_subtitle') }}</p>
