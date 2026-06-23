@@ -9,8 +9,9 @@
    @include('partials.navbar')
 
 <header class="relative overflow-hidden py-36 md:py-80 bg-cover bg-center md:bg-[center_top_-5rem] -mb-px" style="background-image: url('{{ asset('images/headers/products-bg.webp') }}');">
-    <div class="absolute inset-0 z-0" style="background:linear-gradient(to bottom,rgba(0,0,0,.40),rgba(0,0,0,.30),rgba(0,0,0,.5));"></div>
-    <div class="container mx-auto px-6 text-center relative z-10 -mt-20">
+<div class="absolute inset-0 z-0 bg-black/20"></div>
+
+<div class="container mx-auto px-6 text-center relative z-10 -mt-20">
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 text-white" style="text-shadow:0 2px 20px rgba(0,0,0,.9);">{{ __('messages.products') }}</h1>
         <p class="text-white text-lg" style="opacity:.9;text-shadow:0 1px 10px rgba(0,0,0,.7);">{{ __('messages.products_subtitle') }}</p>
     </div>
@@ -95,8 +96,7 @@
                 <div data-aos="fade-up" class="bg-white rounded-xl shadow-sm transition-all duration-500 border border-gray-100 hover:shadow-2xl hover:shadow-brand-orange/30 hover:-translate-y-1.5 group flex flex-col">
                     <div class="h-40 sm:h-52 md:h-64 overflow-hidden rounded-t-xl bg-white relative flex items-center justify-center p-4 border-b border-gray-50">
                         @if($product->image)
-                            <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" loading="lazy" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
-                        @else
+<img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" loading="lazy" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">                        @else
                             <span class="text-gray-400">{{ __('messages.no_image') }}</span>
                         @endif
                     </div>
