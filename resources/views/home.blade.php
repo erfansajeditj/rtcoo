@@ -9,8 +9,11 @@
 
    @include('partials.navbar')
 
-    <div class="relative w-full h-screen overflow-hidden bg-gray-900">
-    
+
+
+
+
+    <div class="fixed inset-0 w-full h-screen z-0 pointer-events-none">
     <video
         autoplay
         loop
@@ -20,32 +23,30 @@
     >
         <source src="{{ asset('videos/hero.mp4') }}" type="video/mp4">
         <source src="{{ asset('videos/hero.webm') }}" type="video/webm">
-        Your browser does not support the video tag.
     </video>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-brand-teal/20 to-black/80 z-10"></div>
+</div>
 
-    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-brand-teal/20 to-black/80 z-10 pointer-events-none"></div>
-
-    <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-6 max-w-5xl mx-auto mt-10">
-
-
-
-            <span class="text-brand-orange font-bold tracking-widest uppercase text-sm mb-4 block animate-pulse">{{ __('messages.innovating_healthcare') }}</span>
-<h1 class="text-4xl md:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight drop-shadow-lg">                {{ __('messages.future_of') }} <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-white">{{ __('messages.medical_equipment') }}</span>
-            </h1>
-            <p class="text-gray-200 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
-                {{ __('messages.hero_desc') }}
-            </p>
-            
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-<a href="{{ route('products.index') }}" class="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-brand-teal text-white font-bold rounded-full hover:bg-teal-600 active:scale-95 transition shadow-lg hover:shadow-teal-500/30 transform hover:scale-105">
-                        {{ __('messages.view_products') }}
-                </a>
-<a href="{{ route('contact.show') }}" class="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-gray-900 active:scale-95 transition shadow-lg transform hover:scale-105">
-                        {{ __('messages.contact_us') }}
-                </a>
-            </div>
-        </div>
+<div class="relative z-10 flex flex-col items-center justify-center h-screen text-center px-6 max-w-5xl mx-auto pt-10">
+    <span class="text-brand-orange font-bold tracking-widest uppercase text-sm mb-4 block animate-pulse">{{ __('messages.innovating_healthcare') }}</span>
+    <h1 class="text-4xl md:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight drop-shadow-lg">
+        {{ __('messages.future_of') }} <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-white">{{ __('messages.medical_equipment') }}</span>
+    </h1>
+    <p class="text-gray-200 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+        {{ __('messages.hero_desc') }}
+    </p>
+    
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="{{ route('products.index') }}" class="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-brand-teal text-white font-bold rounded-full hover:bg-teal-600 active:scale-95 transition shadow-lg hover:shadow-teal-500/30 transform hover:scale-105">
+            {{ __('messages.view_products') }}
+        </a>
+        <a href="{{ route('contact.show') }}" class="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-gray-900 active:scale-95 transition shadow-lg transform hover:scale-105">
+            {{ __('messages.contact_us') }}
+        </a>
     </div>
+</div>
+
+<div class="relative z-10 bg-white shadow-[0_-20px_50px_rgba(0,0,0,0.5)]">
 
 
 
@@ -344,7 +345,11 @@
 {!! json_encode($webpageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
 </script>
 
+
 @include('footer')
+    
+</div>
+
 
 
 

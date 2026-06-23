@@ -9,7 +9,7 @@
     @include('partials.navbar')
 
 
-<header class="relative overflow-hidden py-36 md:py-80 bg-cover bg-center md:bg-[center_top_-5rem] -mb-px bg-fixed" style="background-image: url('{{ asset('images/headers/collabration-bg.webp') }}');">
+<header class="relative overflow-hidden py-36 md:py-80 bg-cover bg-center md:bg-[center_top_2rem] -mb-px bg-fixed" style="background-image: url('{{ asset('images/headers/collabration-bg.webp') }}');">
 
 
 <div class="absolute inset-0 z-0 bg-black/20"></div>
