@@ -96,9 +96,9 @@
                 <div data-aos="fade-up" class="bg-white rounded-xl shadow-sm transition-all duration-500 border border-gray-100 hover:shadow-2xl hover:shadow-brand-orange/30 hover:-translate-y-1.5 group flex flex-col">
 
 
-                   <div class="relative h-40 sm:h-52 md:h-64 overflow-hidden rounded-t-xl bg-gray-50">
+                  <div class="relative h-40 sm:h-52 md:h-64 overflow-hidden rounded-t-xl bg-white border-b border-gray-50">
     @if($product->image)
-        <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 z-0">    
+        <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" loading="lazy" class="absolute inset-0 w-full h-full object-contain object-center p-4 group-hover:scale-105 transition-transform duration-500 z-0">    
     @else
         <div class="absolute inset-0 flex items-center justify-center">
             <span class="text-gray-400 font-medium">{{ __('messages.no_image') }}</span>
