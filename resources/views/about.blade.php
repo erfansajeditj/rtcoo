@@ -8,7 +8,7 @@
    @include('partials.navbar')
 
 
-<header class="relative overflow-hidden py-36 md:py-80 bg-cover bg-center md:bg-[center_top_-5rem] -mb-px bg-fixed" style="background-image: url('{{ asset('images/headers/about-bg.webp') }}');">
+<header class="relative overflow-hidden py-36 md:py-80 bg-cover bg-center md:bg-center -mb-px bg-fixed" style="background-image: url('{{ asset('images/headers/about-bg.webp') }}');">
 
 <div class="absolute inset-0 z-0 bg-black/20"></div>
     <div class="container mx-auto px-6 text-center relative z-10 -mt-20">
