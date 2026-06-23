@@ -9,10 +9,10 @@
     @include('partials.navbar')
 
 
-<header class="relative overflow-hidden py-36 md:py-80 bg-cover bg-center md:bg-[center_top_2rem] -mb-px bg-fixed" style="background-image: url('{{ asset('images/headers/collabration-bg.webp') }}');">
+<header class="relative overflow-hidden py-40 md:py-80 bg-cover bg-scroll md:bg-fixed bg-center md:bg-[center_top_2rem] -mb-px" style="background-image: url('{{ asset('images/headers/collabration-bg.webp') }}');">
 
 
-<div class="absolute inset-0 z-0 bg-black/20"></div>
+<div class="absolute inset-0 z-0 bg-black/12"></div>
     <div class="container mx-auto px-6 text-center relative z-10 -mt-20">
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-5 text-white" style="text-shadow:0 2px 20px rgba(0,0,0,.9);">{{ __('messages.partner_with_us') }}</h1>
         <p class="text-white text-lg max-w-2xl mx-auto" style="opacity:.9;text-shadow:0 1px 10px rgba(0,0,0,.7);">{{ __('messages.collab_subtitle') }}</p>
