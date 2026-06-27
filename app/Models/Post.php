@@ -4,9 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
+use Spatie\Translatable\HasTranslations; // مثل Product تا لاراول مسیرش رو بشناسه
 
 class Post extends Model
 {
+    use HasTranslations; // فعال‌سازی ترجمه‌پذیری
+
+    // فیلدهایی که چندزبانه (JSON) می‌شوند
+    public array $translatable = ['title', 'excerpt', 'content', 'slug'];
+
     protected $fillable = [
         'type', 'title', 'slug', 'excerpt',
         'content', 'cover_image', 'is_published', 'published_at',
