@@ -37,6 +37,7 @@ class ExhibitionForm
                     FileUpload::make('cover_image')
                         ->label('پوستر یا عکس کاور نمایشگاه')
                         ->image()
+                        ->disk('public')
                         ->directory('exhibitions')
                         ->preserveFilenames()
                         ->columnSpanFull(),
@@ -44,6 +45,7 @@ class ExhibitionForm
                         FileUpload::make('gallery')
     ->label('گالری تصاویر نمایشگاه (چند عکس)')
     ->image()
+    ->disk('public')
     ->multiple() // <--- این کلمه جادویی باعث می‌شه بتونی چند تا عکس انتخاب کنی!
     ->directory('exhibitions/gallery')
     ->preserveFilenames()

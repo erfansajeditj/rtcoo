@@ -140,6 +140,7 @@ class PostForm
                     FileUpload::make('cover_image')
                         ->label('تصویر کاور')
                         ->image()
+                        ->disk('public')
                         ->directory('posts')
                         ->preserveFilenames()
                         ->columnSpanFull(),
