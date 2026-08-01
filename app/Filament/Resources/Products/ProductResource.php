@@ -41,15 +41,26 @@ class ProductResource extends Resource
                         ->image()
                         ->disk('public')
                         ->directory('products')
-                        ->maxSize(20480),
+                        ->maxSize(20480)
+                        // فشرده‌سازی خودکار: حداکثر ضلع ۱۹۲۰px، بدون بزرگ‌کردن، با حفظ نسبت تصویر
+                        ->imageResizeMode('contain')
+                        ->imageResizeTargetWidth('1920')
+                        ->imageResizeTargetHeight('1920')
+                        ->imageResizeUpscale(false),
 
                     FileUpload::make('gallery')
                         ->label('گالری تصاویر')
+                        ->image()
                         ->disk('public')
                         ->directory('products/gallery')
                         ->multiple()
                         ->reorderable()
-                        ->panelLayout('grid'),
+                        ->panelLayout('grid')
+                        // فشرده‌سازی خودکار: حداکثر ضلع ۱۹۲۰px، بدون بزرگ‌کردن، با حفظ نسبت تصویر
+                        ->imageResizeMode('contain')
+                        ->imageResizeTargetWidth('1920')
+                        ->imageResizeTargetHeight('1920')
+                        ->imageResizeUpscale(false),
 
                     FileUpload::make('catalog_file')
                         ->label('فایل کاتالوگ')

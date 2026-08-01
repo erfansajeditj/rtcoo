@@ -40,6 +40,11 @@ class ExhibitionForm
                         ->disk('public')
                         ->directory('exhibitions')
                         ->preserveFilenames()
+                        // فشرده‌سازی خودکار: حداکثر ضلع ۱۹۲۰px، بدون بزرگ‌کردن، با حفظ نسبت تصویر
+                        ->imageResizeMode('contain')
+                        ->imageResizeTargetWidth('1920')
+                        ->imageResizeTargetHeight('1920')
+                        ->imageResizeUpscale(false)
                         ->columnSpanFull(),
 
                         FileUpload::make('gallery')
@@ -50,6 +55,11 @@ class ExhibitionForm
     ->directory('exhibitions/gallery')
     ->preserveFilenames()
     ->reorderable() // این امکان رو می‌ده که با موس جای عکس‌ها رو بالا پایین کنی و ترتیبشون رو عوض کنی
+    // فشرده‌سازی خودکار: حداکثر ضلع ۱۹۲۰px، بدون بزرگ‌کردن، با حفظ نسبت تصویر
+    ->imageResizeMode('contain')
+    ->imageResizeTargetWidth('1920')
+    ->imageResizeTargetHeight('1920')
+    ->imageResizeUpscale(false)
     ->columnSpanFull(),
     
 

@@ -143,6 +143,11 @@ class PostForm
                         ->disk('public')
                         ->directory('posts')
                         ->preserveFilenames()
+                        // فشرده‌سازی خودکار: حداکثر ضلع ۱۹۲۰px، بدون بزرگ‌کردن، با حفظ نسبت تصویر
+                        ->imageResizeMode('contain')
+                        ->imageResizeTargetWidth('1920')
+                        ->imageResizeTargetHeight('1920')
+                        ->imageResizeUpscale(false)
                         ->columnSpanFull(),
                 ]),
         ]);
