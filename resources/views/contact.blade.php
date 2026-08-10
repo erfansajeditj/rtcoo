@@ -66,7 +66,7 @@
                             <div>
                                 <h4 class="font-bold text-gray-900">{{ __('messages.phone') }}</h4>
                                 <p class="text-gray-600 font-mono">+992 93 110 2730</p>
-                                <p class="text-gray-600 font-mono">+98 910 397 5459</p>
+                                
                             </div>
                         </div>
 
