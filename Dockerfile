@@ -22,7 +22,7 @@ RUN composer install --no-dev --no-interaction --no-progress --no-scripts --pref
 
 COPY . .
 RUN composer dump-autoload --no-dev --optimize --no-scripts \
-    && mkdir -p storage/framework/{cache,sessions,views} storage/logs bootstrap/cache \
+    && mkdir -p storage/framework/cache storage/framework/sessions storage/framework/views storage/logs bootstrap/cache \
     && chmod +x docker/entrypoint.sh
 
 EXPOSE 8080

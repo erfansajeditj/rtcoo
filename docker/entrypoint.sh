@@ -15,6 +15,7 @@ ln -sfn "$DATA_DIR/public" storage/app/public
 ln -sfn "$DATA_DIR/private" storage/app/private
 ln -sfn "$DATA_DIR/public" public/storage
 
+mkdir -p storage/framework/cache storage/framework/sessions storage/framework/views storage/logs bootstrap/cache
 chown -R www-data:www-data "$DATA_DIR" storage bootstrap/cache
 
 php artisan migrate --force
