@@ -27,17 +27,19 @@ return new class extends Migration
             'content' => '{}',
         ]);
 
-        // ۳) تغییر نوع ستون‌ها به JSON (change() — در لاراول ۱۱ بدون نیاز به doctrine/dbal)
-        Schema::table('posts', function (Blueprint $table) {
-            $table->json('title')->change();
-            $table->json('excerpt')->nullable()->change();
-            $table->json('content')->nullable()->change();
-        });
+        // ۳) تغییر نوع ستون‌ها به JSON (فقط MySQL؛ SQLite متن را مستقیم نگه می‌دارد)
+        if (DB::getDriverName() === 'mysql') {
+            Schema::table('posts', function (Blueprint $table) {
+                $table->json('title')->change();
+                $table->json('excerpt')->nullable()->change();
+                $table->json('content')->nullable()->change();
+            });
 
-        // slug ایندکس unique دارد و روی ستون JSON نمی‌توان unique مستقیم داشت،
-        // پس اول ایندکس را حذف و سپس نوع را عوض می‌کنیم (دقیقاً مثل مهاجرت محصولات).
-        DB::statement('ALTER TABLE posts DROP INDEX posts_slug_unique');
-        DB::statement('ALTER TABLE posts MODIFY slug JSON');
+            // slug ایندکس unique دارد و روی ستون JSON نمی‌توان unique مستقیم داشت،
+            // پس اول ایندکس را حذف و سپس نوع را عوض می‌کنیم (دقیقاً مثل مهاجرت محصولات).
+            DB::statement('ALTER TABLE posts DROP INDEX posts_slug_unique');
+            DB::statement('ALTER TABLE posts MODIFY slug JSON');
+        }
 
         // ۴) بازنویسی مقادیر اصلی، بسته‌بندی‌شده زیر زبان پیش‌فرض
         foreach ($posts as $post) {
