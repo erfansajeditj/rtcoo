@@ -23,6 +23,11 @@ php artisan config:cache
 php artisan route:cache
 php artisan view:cache
 
+# Exactly one MPM (prefork, required by mod_php) must be enabled.
+rm -f /etc/apache2/mods-enabled/mpm_*.load /etc/apache2/mods-enabled/mpm_*.conf
+ln -sf /etc/apache2/mods-available/mpm_prefork.load /etc/apache2/mods-enabled/mpm_prefork.load
+ln -sf /etc/apache2/mods-available/mpm_prefork.conf /etc/apache2/mods-enabled/mpm_prefork.conf
+
 # Apache must listen on the platform-provided port.
 PORT="${PORT:-8080}"
 sed -ri "s/Listen 80/Listen ${PORT}/" /etc/apache2/ports.conf
