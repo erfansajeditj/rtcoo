@@ -14,6 +14,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
+        // پشت پروکسی هاست (Railway) هستیم؛ برای تشخیص درست https
+        $middleware->trustProxies(at: '*');
+
         // ثبت بادیگارد (Middleware) برای تغییر زبان سایت
         $middleware->web(append: [
             \App\Http\Middleware\LanguageManager::class,
