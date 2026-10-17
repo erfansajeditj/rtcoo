@@ -9,6 +9,12 @@ return new class extends Migration
 {
     public function up(): void
     {
+        // این مهاجرت مخصوص MySQL است (DROP INDEX / MODIFY). SQLite ستون JSON را
+        // به‌صورت متن ذخیره می‌کند و نیازی به تبدیل ندارد.
+        if (DB::getDriverName() !== 'mysql') {
+            return;
+        }
+
         // ۱. چشم‌های دیتابیس رو می‌بندیم (قوانین کلید خارجی خاموش)
         Schema::disableForeignKeyConstraints();
 

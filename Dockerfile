@@ -3,7 +3,7 @@ FROM php:8.4-apache
 RUN apt-get update && apt-get install -y --no-install-recommends \
         libicu-dev libzip-dev libpng-dev libjpeg-dev libwebp-dev libfreetype6-dev libonig-dev libsqlite3-dev unzip git \
     && docker-php-ext-configure gd --with-jpeg --with-webp --with-freetype \
-    && docker-php-ext-install -j"$(nproc)" pdo_sqlite intl zip gd bcmath exif opcache mbstring \
+    && docker-php-ext-install -j"$(nproc)" pdo_sqlite pdo_mysql intl zip gd bcmath exif opcache mbstring \
     && a2enmod rewrite headers expires deflate \
     && rm -rf /var/lib/apt/lists/*
 
